@@ -2467,12 +2467,36 @@ button:active {
     /* L'immagine si "accende" tornando normale al passaggio del mouse */
     filter: brightness(1) !important;
 }
-/* --- CLASSE EVIDENZA FILOSOMATICO (Versione 600) --- */
+
 .evidenza {
-    color: #ff9100 !important;
-    font-weight: 600 !important; /* Più leggero ed elegante */
-    text-shadow: 0 0 6px rgba(255, 145, 0, 0.15); /* Bagliore più discreto */
+    color: #ff9100 !important; /* Il tuo arancione originale */
+    opacity: 0.9;              /* Riduce la "botta" luminosa senza cambiare colore */
+    font-weight: 600 !important; 
+    text-shadow: 0 0 4px rgba(255, 145, 0, 0.1); /* Bagliore ancora più sottile */
 }
+
+/* --- 2. SPAZI PARAGRAFI (Più compatti) --- */
+p {
+    margin-bottom: 0.8rem !important; /* Riduce l'altezza tra i blocchi di testo */
+    line-height: 1.6;
+}
+
+/* --- 3. FIX MOBILE (Caratteri leggibili) --- */
+@media (max-width: 600px) {
+    body {
+        font-size: 19px !important; /* Testo base più grande sui telefoni */
+    }
+    
+    p {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.7rem !important;
+    }
+    
+    section {
+        padding: 30px 15px !important; /* Comprime gli spazi vuoti tra le sezioni */
+    }
+}
+
 /* --- SPAZIATURA TITOLI IN METHODOS --- */
 
 /* Applica uno spazio generoso sopra ogni sottotitolo di Methodos */
