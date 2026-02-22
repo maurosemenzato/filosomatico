@@ -1,17 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 @import url(fontawesome-all.min.css);
 
-/* RESET TOTALE FOOTER - DA METTERE IN ALTO */
-#footer p.copyright, 
-#footer .copyright, 
-footer#footer p {
-    font-size: 10px !important;
-    font-weight: 300 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.1rem !important;
-    line-height: 1 !important;
-}
-
 /*
 	Dimension by HTML5 UP
 	html5up.net | @ajlkn
@@ -2493,9 +2482,11 @@ button:active {
     border-top: none !important;
     padding-top: 0 !important;
 }
-/* --- FIX FILOSOMATICO CHIRURGICO (Versione Finale) --- */
+/* ============================================================
+   REVISIONE FINALE FILOSOMATICO
+   ============================================================ */
 
-/* 1. Arancione: Codice originale, solido e senza neon */
+/* 1. EVIDENZA: Arancione originale, ma niente effetto neon */
 .evidenza {
     color: #ff9100 !important;
     font-weight: 600 !important;
@@ -2503,25 +2494,30 @@ button:active {
     opacity: 1 !important;
 }
 
-/* 2. Spazi tra i paragrafi: Compatti il giusto */
+/* 2. PARAGRAFI: Spazio armonioso tra i blocchi di testo */
 #main article p {
-    margin-bottom: 1.1rem !important;
+    margin-bottom: 1.2rem !important;
+    line-height: 1.6 !important;
 }
 
-/* 3. MOBILE: Ingrandiamo solo il testo che serve, proteggendo il resto */
+/* 3. MOBILE: Testo leggibile e footer blindato */
 @media screen and (max-width: 736px) {
-    /* Miriamo SOLO ai paragrafi e alle liste dentro gli articoli */
+    
+    /* Ingrandiamo solo i testi delle sezioni per il cellulare */
     #main article p, 
     #main article li {
-        font-size: 1.1rem !important; 
+        font-size: 1.15rem !important; 
         line-height: 1.6 !important;
     }
 
-    /* FORZIAMO il footer a restare piccolo (0.6rem è circa 10px) */
-    footer#footer p.copyright, 
-    #footer p {
-        font-size: 0.6rem !important;
+    /* FOOTER: Forziamo 10 pixel. Non può più sbagliare. */
+    #footer p, 
+    #footer .copyright, 
+    footer#footer p {
+        font-size: 10px !important;    
         letter-spacing: 0.1rem !important;
-        opacity: 0.7 !important;
+        opacity: 0.6 !important;
+        line-height: 1.2 !important;
+        text-transform: uppercase !important;
     }
 }
