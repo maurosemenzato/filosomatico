@@ -2510,7 +2510,7 @@ button:active {
     }
 
     /* Eccezione: lista 5 punti in Servizi */
-    #main article#about > ul > li {
+    #about ul li {
         font-size: 0.85rem !important;
         line-height: 1.6 !important;
     }
