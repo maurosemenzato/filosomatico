@@ -2481,6 +2481,22 @@ p {
     line-height: 1.6;
 }
 
+/* --- 3. FIX MOBILE (Caratteri leggibili) --- */
+@media (max-width: 600px) {
+    body {
+        font-size: 19px !important; /* Testo base più grande sui telefoni */
+    }
+    
+    p {
+        font-size: 1.1rem !important;
+        margin-bottom: 0.7rem !important;
+    }
+    
+    section {
+        padding: 30px 15px !important; /* Comprime gli spazi vuoti tra le sezioni */
+    }
+}
+
 /* --- SPAZIATURA TITOLI IN METHODOS --- */
 
 /* Applica uno spazio generoso sopra ogni sottotitolo di Methodos */
