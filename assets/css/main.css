@@ -2014,19 +2014,22 @@ article h3 {
 ul.icons li a {
     /* Stato Normale: Bianco e discreto */
     color: #ffffff;
-    border-color: rgba(255, 255, 255, 0.5); /* Il cerchio è semitrasparente */
-    transition: all 0.3s ease; /* Tutto si muove in modo fluido */
+    border-color: rgba(255, 255, 255, 0.5); 
+    transition: all 0.3s ease; 
 }
 
-ul.icons li a:hover {
-    /* Stato Hover: Esplosione di Arancione */
-    color: #ff9100 !important;       /* L'icona diventa arancione */
-    border-color: #ff9100 !important; /* Anche il bordo diventa arancione */
-    
-    /* Effetto "Pop" e Luce */
-    transform: scale(1.15); /* Si ingrandisce del 15% */
-    box-shadow: 0 0 15px rgba(255, 145, 0, 0.4); /* Alone luminoso arancione */
-    background-color: rgba(255, 145, 0, 0.1); /* Sfondo leggermente colorato */
+/* Applica l'effetto arancione solo su dispositivi con il mouse (PC) */
+@media (hover: hover) {
+    ul.icons li a:hover {
+        /* Stato Hover: Esplosione di Arancione */
+        color: #ff9100 !important;       
+        border-color: #ff9100 !important; 
+        
+        /* Effetto "Pop" e Luce */
+        transform: scale(1.15); 
+        box-shadow: 0 0 15px rgba(255, 145, 0, 0.4); 
+        background-color: rgba(255, 145, 0, 0.1); 
+    }
 }
 /* ============================================================
    SOLUZIONE INTELLIGENTE: DESKTOP ALLINEATO / MOBILE ORIGINALE
@@ -2519,5 +2522,38 @@ button:active {
     p {
         font-size: inherit !important;
         margin-bottom: inherit !important;
+    }
+}
+/* Sincronizzazione font liste con paragrafi su Mobile */
+#wrapper #main article ul li, 
+#wrapper #main article ol li {
+    /* Allinea la dimensione alla stessa dei paragrafi */
+    font-size: 1rem; 
+    line-height: 1.75;
+    margin-bottom: 0.75rem; /* Spaziatura organica tra i punti */
+}
+
+/* Fix specifico per il "Font Boosting" asimmetrico */
+@media screen and (max-width: 736px) {
+    #wrapper #main article p, 
+    #wrapper #main article ul li, 
+    #wrapper #main article ol li {
+        /* Impedisce al browser di fare calcoli arbitrari solo su alcuni elementi */
+        -webkit-text-size-adjust: 100%; 
+        -moz-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+        
+        /* Specifichiamo una dimensione comune per la modalità portrait */
+        font-size: 1.05rem !important; 
+    }
+}
+
+/* Ripristino per la modalità landscape (orizzontale) */
+@media screen and (max-width: 736px) and (orientation: landscape) {
+    #wrapper #main article p, 
+    #wrapper #main article ul li, 
+    #wrapper #main article ol li {
+        font-size: 0.9rem !important;
     }
 }
