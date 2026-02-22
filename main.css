@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
 @import url(fontawesome-all.min.css);
 
+/* RESET TOTALE FOOTER - DA METTERE IN ALTO */
+#footer p.copyright, 
+#footer .copyright, 
+footer#footer p {
+    font-size: 10px !important;
+    font-weight: 300 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1rem !important;
+    line-height: 1 !important;
+}
 
 /*
 	Dimension by HTML5 UP
