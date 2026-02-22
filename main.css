@@ -2483,3 +2483,35 @@ button:active {
     border-top: none !important;
     padding-top: 0 !important;
 }
+/* --- FIX FILOSOMATICO CHIRURGICO (Versione Finale) --- */
+
+/* 1. Arancione: Codice originale, solido e senza neon */
+.evidenza {
+    color: #ff9100 !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+}
+
+/* 2. Spazi tra i paragrafi: Compatti il giusto */
+#main article p {
+    margin-bottom: 1.1rem !important;
+}
+
+/* 3. MOBILE: Ingrandiamo solo il testo che serve, proteggendo il resto */
+@media screen and (max-width: 736px) {
+    /* Miriamo SOLO ai paragrafi e alle liste dentro gli articoli */
+    #main article p, 
+    #main article li {
+        font-size: 1.1rem !important; 
+        line-height: 1.6 !important;
+    }
+
+    /* FORZIAMO il footer a restare piccolo (0.6rem è circa 10px) */
+    footer#footer p.copyright, 
+    #footer p {
+        font-size: 0.6rem !important;
+        letter-spacing: 0.1rem !important;
+        opacity: 0.7 !important;
+    }
+}
