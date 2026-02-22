@@ -2486,7 +2486,6 @@ button:active {
    REVISIONE FINALE FILOSOMATICO
    ============================================================ */
 
-/* 1. EVIDENZA: Arancione originale, ma niente effetto neon */
 .evidenza {
     color: #ff9100 !important;
     font-weight: 600 !important;
@@ -2494,24 +2493,15 @@ button:active {
     opacity: 1 !important;
 }
 
-/* 2. PARAGRAFI: Spazio armonioso tra i blocchi di testo */
 #main article p {
     margin-bottom: 1.2rem !important;
     line-height: 1.6 !important;
 }
 
-/* 3. MOBILE: Testo leggibile e footer blindato */
 @media screen and (max-width: 736px) {
     
-    #main article p, 
-    #main article li {
+    #main article p {
         font-size: 1.15rem !important; 
-        line-height: 1.6 !important;
-    }
-
-    /* Eccezione: lista 5 punti in Servizi */
-    #about ul li {
-        font-size: 0.85rem !important;
         line-height: 1.6 !important;
     }
 
