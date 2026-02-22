@@ -1,0 +1,2541 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+@import url(fontawesome-all.min.css);
+
+/*
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+html, body, div, span, applet, object,
+iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, a, abbr, acronym, address, big, cite,
+code, del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, b,
+u, i, center, dl, dt, dd, ol, ul, li, fieldset,
+form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption,
+footer, header, hgroup, menu, nav, output, ruby,
+section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+	blockquote:before, blockquote:after, q:before, q:after {
+		content: '';
+		content: none;
+	}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	-webkit-text-size-adjust: none;
+}
+
+mark {
+	background-color: transparent;
+	color: inherit;
+}
+
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+
+input, select, textarea {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	-ms-appearance: none;
+	appearance: none;
+}
+
+/* Basic */
+
+	@-ms-viewport {
+		width: device-width;
+	}
+
+	@media screen and (max-width: 480px) {
+
+		html, body {
+			min-width: 320px;
+		}
+
+	}
+
+	html {
+		box-sizing: border-box;
+	}
+
+	*, *:before, *:after {
+		box-sizing: inherit;
+	}
+
+	body {
+		background: #1b1f22;
+	}
+
+		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+		}
+
+/* Type */
+
+	html {
+		font-size: 16pt;
+	}
+
+		@media screen and (max-width: 1680px) {
+
+			html {
+				font-size: 12pt;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			html {
+				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (max-width: 360px) {
+
+			html {
+				font-size: 10pt;
+			}
+
+		}
+
+	body, input, select, textarea {
+		color: #ffffff;
+		font-family: 'Quicksand', sans-serif; /* Ecco la modifica pulita */
+    font-weight: 300; /* 300 = Sottile ed elegante */
+    font-size: 1rem;
+    line-height: 1.65;
+}
+
+	a {
+		-moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		-ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+		border-bottom: dotted 1px rgba(255, 255, 255, 0.5);
+		text-decoration: none;
+		color: inherit;
+	}
+
+		a:hover {
+			border-bottom-color: transparent;
+		}
+
+	strong, b {
+		color: #ffffff;
+		font-weight: 400;
+	}
+
+	em, i {
+		font-style: italic;
+	}
+
+	p {
+		margin: 0 0 2rem 0;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		color: #ffffff;
+		font-weight: 300;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+	}
+
+		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
+
+		h1.major, h2.major, h3.major, h4.major, h5.major, h6.major {
+			border-bottom: solid 1px #ffffff;
+			width: -moz-max-content;
+			width: -webkit-max-content;
+			width: -ms-max-content;
+			width: max-content;
+			padding-bottom: 0.5rem;
+			margin: 0 0 2rem 0;
+		}
+
+h1 {
+    font-size: 3rem;    /* Aumenta questo valore (prova 3.5rem, 4rem o anche 5rem) */
+    font-weight: 300;   /* <--- AGGIUNGI QUESTO per assicurarti che resti sottile */
+    line-height: 1.1;   /* Riduciamo un po' l'interlinea perché il font è grande */
+    letter-spacing: 0.5rem; /* Puoi aumentarlo a 0.7rem se vuoi più "aria" tra le lettere */
+    margin-bottom: 0.5rem; /* Opzionale: riduce lo spazio sotto il titolo */
+}
+
+	h2 {
+		font-size: 1.5rem;
+		line-height: 1.4;
+		letter-spacing: 0.5rem;
+	}
+
+	h3 {
+		font-size: 1rem;
+	}
+
+	h4 {
+		font-size: 0.8rem;
+	}
+
+	h5 {
+		font-size: 0.7rem;
+	}
+
+	h6 {
+		font-size: 0.6rem;
+	}
+
+	@media screen and (max-width: 736px) {
+
+		h1 {
+			font-size: 1.75rem;
+			line-height: 1.4;
+		}
+
+		h2 {
+			font-size: 1.25em;
+			line-height: 1.5;
+		}
+
+	}
+
+	sub {
+		font-size: 0.8rem;
+		position: relative;
+		top: 0.5rem;
+	}
+
+	sup {
+		font-size: 0.8rem;
+		position: relative;
+		top: -0.5rem;
+	}
+
+	blockquote {
+		border-left: solid 4px #ffffff;
+		font-style: italic;
+		margin: 0 0 2rem 0;
+		padding: 0.5rem 0 0.5rem 2rem;
+	}
+
+	code {
+		background: rgba(255, 255, 255, 0.075);
+		border-radius: 4px;
+		font-family: "Courier New", monospace;
+		font-size: 0.9rem;
+		margin: 0 0.25rem;
+		padding: 0.25rem 0.65rem;
+	}
+
+	pre {
+		-webkit-overflow-scrolling: touch;
+		font-family: "Courier New", monospace;
+		font-size: 0.9rem;
+		margin: 0 0 2rem 0;
+	}
+
+		pre code {
+			display: block;
+			line-height: 1.75;
+			padding: 1rem 1.5rem;
+			overflow-x: auto;
+		}
+
+	hr {
+		border: 0;
+		border-bottom: solid 1px #ffffff;
+		margin: 2.75rem 0;
+	}
+
+	.align-left {
+		text-align: left;
+	}
+
+	.align-center {
+		text-align: center;
+	}
+
+	.align-right {
+		text-align: right;
+	}
+
+/* Form */
+
+	form {
+		margin: 0 0 2rem 0;
+	}
+
+		form > :last-child {
+			margin-bottom: 0;
+		}
+
+		form > .fields {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			-moz-flex-wrap: wrap;
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+			width: calc(100% + 3rem);
+			margin: -1.5rem 0 2rem -1.5rem;
+		}
+
+			form > .fields > .field {
+				-moz-flex-grow: 0;
+				-webkit-flex-grow: 0;
+				-ms-flex-grow: 0;
+				flex-grow: 0;
+				-moz-flex-shrink: 0;
+				-webkit-flex-shrink: 0;
+				-ms-flex-shrink: 0;
+				flex-shrink: 0;
+				padding: 1.5rem 0 0 1.5rem;
+				width: calc(100% - 1.5rem);
+			}
+
+				form > .fields > .field.half {
+					width: calc(50% - 0.75rem);
+				}
+
+				form > .fields > .field.third {
+					width: calc(100%/3 - 0.5rem);
+				}
+
+				form > .fields > .field.quarter {
+					width: calc(25% - 0.375rem);
+				}
+
+		@media screen and (max-width: 480px) {
+
+			form > .fields {
+				width: calc(100% + 3rem);
+				margin: -1.5rem 0 2rem -1.5rem;
+			}
+
+				form > .fields > .field {
+					padding: 1.5rem 0 0 1.5rem;
+					width: calc(100% - 1.5rem);
+				}
+
+					form > .fields > .field.half {
+						width: calc(100% - 1.5rem);
+					}
+
+					form > .fields > .field.third {
+						width: calc(100% - 1.5rem);
+					}
+
+					form > .fields > .field.quarter {
+						width: calc(100% - 1.5rem);
+					}
+
+		}
+
+	label {
+		color: #ffffff;
+		display: block;
+		font-size: 0.8rem;
+		font-weight: 300;
+		letter-spacing: 0.2rem;
+		line-height: 1.5;
+		margin: 0 0 1rem 0;
+		text-transform: uppercase;
+	}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	input[type="tel"],
+	select,
+	textarea {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+		background-color: transparent;
+		border-radius: 4px;
+		border: solid 1px #ffffff;
+		color: inherit;
+		display: block;
+		outline: 0;
+		padding: 0 1rem;
+		text-decoration: none;
+		width: 100%;
+	}
+
+		input[type="text"]:invalid,
+		input[type="password"]:invalid,
+		input[type="email"]:invalid,
+		input[type="tel"]:invalid,
+		select:invalid,
+		textarea:invalid {
+			box-shadow: none;
+		}
+
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="email"]:focus,
+		input[type="tel"]:focus,
+		select:focus,
+		textarea:focus {
+			background: rgba(255, 255, 255, 0.075);
+			border-color: #ffffff;
+			box-shadow: 0 0 0 1px #ffffff;
+		}
+
+	select {
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='%23ffffff' /%3E%3C/svg%3E");
+		background-size: 1.25rem;
+		background-repeat: no-repeat;
+		background-position: calc(100% - 1rem) center;
+		height: 2.75rem;
+		padding-right: 2.75rem;
+		text-overflow: ellipsis;
+	}
+
+		select option {
+			color: #ffffff;
+			background: #1b1f22;
+		}
+
+		select:focus::-ms-value {
+			background-color: transparent;
+		}
+
+		select::-ms-expand {
+			display: none;
+		}
+
+	input[type="text"],
+	input[type="password"],
+	input[type="email"],
+	select {
+		height: 2.75rem;
+	}
+
+	textarea {
+		padding: 0.75rem 1rem;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		display: block;
+		float: left;
+		margin-right: -2rem;
+		opacity: 0;
+		width: 1rem;
+		z-index: -1;
+	}
+
+		input[type="checkbox"] + label,
+		input[type="radio"] + label {
+			text-decoration: none;
+			-moz-user-select: none;
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			color: #ffffff;
+			cursor: pointer;
+			display: inline-block;
+			font-size: 0.8rem;
+			font-weight: 300;
+			margin: 0 0 0.5rem 0;
+			padding-left: 2.65rem;
+			padding-right: 0.75rem;
+			position: relative;
+		}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+				display: inline-block;
+				font-style: normal;
+				font-variant: normal;
+				text-rendering: auto;
+				line-height: 1;
+				text-transform: none !important;
+				font-family: 'Font Awesome 5 Free';
+				font-weight: 900;
+			}
+
+			input[type="checkbox"] + label:before,
+			input[type="radio"] + label:before {
+				-moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+				-webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+				-ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+				transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+				border-radius: 4px;
+				border: solid 1px #ffffff;
+				content: '';
+				display: inline-block;
+				height: 1.65rem;
+				left: 0;
+				line-height: 1.65rem;
+				position: absolute;
+				text-align: center;
+				top: -0.15rem;
+				width: 1.65rem;
+			}
+
+		input[type="checkbox"]:checked + label:before,
+		input[type="radio"]:checked + label:before {
+			background: #ffffff !important;
+			border-color: #ffffff !important;
+			color: #1b1f22;
+			content: '\f00c';
+		}
+
+		input[type="checkbox"]:focus + label:before,
+		input[type="radio"]:focus + label:before {
+			background: rgba(255, 255, 255, 0.075);
+			border-color: #ffffff;
+			box-shadow: 0 0 0 1px #ffffff;
+		}
+
+	input[type="checkbox"] + label:before {
+		border-radius: 4px;
+	}
+
+	input[type="radio"] + label:before {
+		border-radius: 100%;
+	}
+
+	::-webkit-input-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	:-moz-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	::-moz-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	:-ms-input-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+	.formerize-placeholder {
+		color: rgba(255, 255, 255, 0.5) !important;
+		opacity: 1.0;
+	}
+
+/* Box */
+
+	.box {
+		border-radius: 4px;
+		border: solid 1px #ffffff;
+		margin-bottom: 2rem;
+		padding: 1.5em;
+	}
+
+		.box > :last-child,
+		.box > :last-child > :last-child,
+		.box > :last-child > :last-child > :last-child {
+			margin-bottom: 0;
+		}
+
+		.box.alt {
+			border: 0;
+			border-radius: 0;
+			padding: 0;
+		}
+
+/* Icon */
+
+	.icon {
+		text-decoration: none;
+		border-bottom: none;
+		position: relative;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			display: inline-block;
+			font-style: normal;
+			font-variant: normal;
+			text-rendering: auto;
+			line-height: 1;
+			text-transform: none !important;
+			font-family: 'Font Awesome 5 Free';
+			font-weight: 400;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon:before {
+			line-height: inherit;
+		}
+
+		.icon.solid:before {
+			font-weight: 900;
+		}
+
+		.icon.brands:before {
+			font-family: 'Font Awesome 5 Brands';
+		}
+
+/* Image */
+
+	.image {
+		border-radius: 4px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+	}
+
+		.image:before {
+			pointer-events: none;
+			background-image: url("../../images/overlay.png");
+			background-color: rgba(19, 21, 25, 0.5);
+			border-radius: 4px;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+
+		.image img {
+			border-radius: 4px;
+			display: block;
+		}
+
+		.image.left, .image.right {
+			max-width: 40%;
+		}
+
+			.image.left img, .image.right img {
+				width: 100%;
+			}
+
+		.image.left {
+			float: left;
+			padding: 0 1.5em 1em 0;
+			top: 0.25em;
+		}
+
+		.image.right {
+			float: right;
+			padding: 0 0 1em 1.5em;
+			top: 0.25em;
+		}
+
+		.image.fit {
+			display: block;
+			margin: 0 0 2rem 0;
+			width: 100%;
+		}
+
+			.image.fit img {
+				width: 100%;
+			}
+
+		.image.main {
+			display: block;
+			margin: 2.5rem 0;
+			width: 100%;
+		}
+
+			.image.main img {
+				width: 100%;
+			}
+
+		@media screen and (max-width: 736px) {
+
+			.image.main {
+				margin: 2rem 0;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.image.main {
+				margin: 1.5rem 0;
+			}
+
+		}
+
+/* List */
+
+	ol {
+		list-style: decimal;
+		margin: 0 0 2rem 0;
+		padding-left: 1.25em;
+	}
+
+		ol li {
+			padding-left: 0.25em;
+		}
+
+	ul {
+		list-style: disc;
+		margin: 0 0 2rem 0;
+		padding-left: 1em;
+	}
+
+		ul li {
+			padding-left: 0.5em;
+		}
+
+		ul.alt {
+			list-style: none;
+			padding-left: 0;
+		}
+
+			ul.alt li {
+				border-top: solid 1px #ffffff;
+				padding: 0.5em 0;
+			}
+
+				ul.alt li:first-child {
+					border-top: 0;
+					padding-top: 0;
+				}
+
+	dl {
+		margin: 0 0 2rem 0;
+	}
+
+		dl dt {
+			display: block;
+			font-weight: 600;
+			margin: 0 0 1rem 0;
+		}
+
+		dl dd {
+			margin-left: 2rem;
+		}
+
+/* Actions */
+
+	ul.actions {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		cursor: default;
+		list-style: none;
+		margin-left: -1rem;
+		padding-left: 0;
+	}
+
+		ul.actions li {
+			padding: 0 0 0 1rem;
+			vertical-align: middle;
+		}
+
+		ul.actions.special {
+			-moz-justify-content: center;
+			-webkit-justify-content: center;
+			-ms-justify-content: center;
+			justify-content: center;
+			width: 100%;
+			margin-left: 0;
+		}
+
+			ul.actions.special li:first-child {
+				padding-left: 0;
+			}
+
+		ul.actions.stacked {
+			-moz-flex-direction: column;
+			-webkit-flex-direction: column;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			margin-left: 0;
+		}
+
+			ul.actions.stacked li {
+				padding: 1.3rem 0 0 0;
+			}
+
+				ul.actions.stacked li:first-child {
+					padding-top: 0;
+				}
+
+		ul.actions.fit {
+			width: calc(100% + 1rem);
+		}
+
+			ul.actions.fit li {
+				-moz-flex-grow: 1;
+				-webkit-flex-grow: 1;
+				-ms-flex-grow: 1;
+				flex-grow: 1;
+				-moz-flex-shrink: 1;
+				-webkit-flex-shrink: 1;
+				-ms-flex-shrink: 1;
+				flex-shrink: 1;
+				width: 100%;
+			}
+
+				ul.actions.fit li > * {
+					width: 100%;
+				}
+
+			ul.actions.fit.stacked {
+				width: 100%;
+			}
+
+		@media screen and (max-width: 480px) {
+
+			ul.actions:not(.fixed) {
+				-moz-flex-direction: column;
+				-webkit-flex-direction: column;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				margin-left: 0;
+				width: 100% !important;
+			}
+
+				ul.actions:not(.fixed) li {
+					-moz-flex-grow: 1;
+					-webkit-flex-grow: 1;
+					-ms-flex-grow: 1;
+					flex-grow: 1;
+					-moz-flex-shrink: 1;
+					-webkit-flex-shrink: 1;
+					-ms-flex-shrink: 1;
+					flex-shrink: 1;
+					padding: 1rem 0 0 0;
+					text-align: center;
+					width: 100%;
+				}
+
+					ul.actions:not(.fixed) li > * {
+						width: 100%;
+					}
+
+					ul.actions:not(.fixed) li:first-child {
+						padding-top: 0;
+					}
+
+					ul.actions:not(.fixed) li input[type="submit"],
+					ul.actions:not(.fixed) li input[type="reset"],
+					ul.actions:not(.fixed) li input[type="button"],
+					ul.actions:not(.fixed) li button,
+					ul.actions:not(.fixed) li .button {
+						width: 100%;
+					}
+
+						ul.actions:not(.fixed) li input[type="submit"].icon:before,
+						ul.actions:not(.fixed) li input[type="reset"].icon:before,
+						ul.actions:not(.fixed) li input[type="button"].icon:before,
+						ul.actions:not(.fixed) li button.icon:before,
+						ul.actions:not(.fixed) li .button.icon:before {
+							margin-left: -0.5em;
+						}
+
+		}
+
+/* Icons */
+
+	ul.icons {
+		cursor: default;
+		list-style: none;
+		padding-left: 0;
+	}
+
+		ul.icons li {
+			display: inline-block;
+			padding: 0 0.75em 0 0;
+		}
+
+			ul.icons li:last-child {
+				padding-right: 0;
+			}
+
+			ul.icons li a {
+				border-radius: 100%;
+				box-shadow: inset 0 0 0 1px #ffffff;
+				display: inline-block;
+				height: 2.25rem;
+				line-height: 2.25rem;
+				text-align: center;
+				width: 2.25rem;
+			}
+
+				ul.icons li a:hover {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+				ul.icons li a:active {
+					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+/* Table */
+
+	.table-wrapper {
+		-webkit-overflow-scrolling: touch;
+		overflow-x: auto;
+	}
+
+	table {
+		margin: 0 0 2rem 0;
+		width: 100%;
+	}
+
+		table tbody tr {
+			border: solid 1px #ffffff;
+			border-left: 0;
+			border-right: 0;
+		}
+
+			table tbody tr:nth-child(2n + 1) {
+				background-color: rgba(255, 255, 255, 0.075);
+			}
+
+		table td {
+			padding: 0.75em 0.75em;
+		}
+
+		table th {
+			color: #ffffff;
+			font-size: 0.9em;
+			font-weight: 600;
+			padding: 0 0.75em 0.75em 0.75em;
+			text-align: left;
+		}
+
+		table thead {
+			border-bottom: solid 2px #ffffff;
+		}
+
+		table tfoot {
+			border-top: solid 2px #ffffff;
+		}
+
+		table.alt {
+			border-collapse: separate;
+		}
+
+			table.alt tbody tr td {
+				border: solid 1px #ffffff;
+				border-left-width: 0;
+				border-top-width: 0;
+			}
+
+				table.alt tbody tr td:first-child {
+					border-left-width: 1px;
+				}
+
+			table.alt tbody tr:first-child td {
+				border-top-width: 1px;
+			}
+
+			table.alt thead {
+				border-bottom: 0;
+			}
+
+			table.alt tfoot {
+				border-top: 0;
+			}
+
+/* Button */
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button,
+	.button {
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		-ms-appearance: none;
+		appearance: none;
+		-moz-transition: all 0.2s ease-in-out; /* Cambiato in "all" per fluidità totale */
+		-webkit-transition: all 0.2s ease-in-out;
+		-ms-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+		background-color: transparent;
+		border-radius: 4px;
+		border: 0;
+		/* MODIFICA: Bordo arancione e più spesso (2px) */
+		box-shadow: inset 0 0 0 2px #ff9100; 
+		/* MODIFICA: Testo arancione */
+		color: #ff9100 !important;
+		cursor: pointer;
+		display: inline-block;
+		font-size: 0.8rem;
+		/* MODIFICA: Font più corposo */
+		font-weight: 600;
+		height: 2.75rem;
+		letter-spacing: 0.2rem;
+		line-height: 2.75rem;
+		outline: 0;
+		padding: 0 1.25rem 0 1.35rem;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		white-space: nowrap;
+	}
+
+		input[type="submit"]:hover,
+		input[type="reset"]:hover,
+		input[type="button"]:hover,
+		button:hover,
+		.button:hover {
+			/* MODIFICA: Sfondo arancio trasparente + Glow + Testo bianco */
+			background-color: rgba(255, 145, 0, 0.15);
+			color: #ffffff !important;
+			box-shadow: inset 0 0 0 2px #ff9100, 0 0 15px rgba(255, 145, 0, 0.4);
+		}
+
+		input[type="submit"]:active,
+		input[type="reset"]:active,
+		input[type="button"]:active,
+		button:active,
+		.button:active {
+			/* MODIFICA: Click più deciso */
+			background-color: rgba(255, 145, 0, 0.4);
+		}
+
+		input[type="submit"].icon:before,
+		input[type="reset"].icon:before,
+		input[type="button"].icon:before,
+		button.icon:before,
+		.button.icon:before {
+			margin-right: 0.5em;
+		}
+
+		input[type="submit"].fit,
+		input[type="reset"].fit,
+		input[type="button"].fit,
+		button.fit,
+		.button.fit {
+			width: 100%;
+		}
+
+		input[type="submit"].small,
+		input[type="reset"].small,
+		input[type="button"].small,
+		button.small,
+		.button.small {
+			font-size: 0.6rem;
+			height: 2.0625rem;
+			line-height: 2.0625rem;
+		}
+
+		input[type="submit"].primary,
+		input[type="reset"].primary,
+		input[type="button"].primary,
+		button.primary,
+		.button.primary {
+			background-color: #ffffff;
+			color: #1b1f22 !important;
+			font-weight: 600;
+		}
+
+		input[type="submit"].disabled, input[type="submit"]:disabled,
+		input[type="reset"].disabled,
+		input[type="reset"]:disabled,
+		input[type="button"].disabled,
+		input[type="button"]:disabled,
+		button.disabled,
+		button:disabled,
+		.button.disabled,
+		.button:disabled {
+			pointer-events: none;
+			cursor: default;
+			opacity: 0.25;
+		}
+
+	input[type="submit"],
+	input[type="reset"],
+	input[type="button"],
+	button {
+		line-height: calc(2.75rem - 2px);
+	}
+
+/* BG */
+
+	#bg {
+		-moz-transform: scale(1.0);
+		-webkit-transform: scale(1.0);
+		-ms-transform: scale(1.0);
+		transform: scale(1.0);
+		-webkit-backface-visibility: hidden;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		z-index: 1;
+	}
+
+		#bg:before, #bg:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+		}
+
+		#bg:before {
+			-moz-transition: background-color 2.5s ease-in-out;
+			-webkit-transition: background-color 2.5s ease-in-out;
+			-ms-transition: background-color 2.5s ease-in-out;
+			transition: background-color 2.5s ease-in-out;
+			-moz-transition-delay: 0.75s;
+			-webkit-transition-delay: 0.75s;
+			-ms-transition-delay: 0.75s;
+			transition-delay: 0.75s;
+			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
+			z-index: 2;
+		}
+
+		#bg:after {
+			-moz-transform: scale(1.125);
+			-webkit-transform: scale(1.125);
+			-ms-transform: scale(1.125);
+			transform: scale(1.125);
+			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
+			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
+			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
+			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
+			background-image: url("../../images/bg.jpg");
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat;
+			z-index: 1;
+		}
+
+		body.is-article-visible #bg:after {
+			-moz-transform: scale(1.0825);
+			-webkit-transform: scale(1.0825);
+			-ms-transform: scale(1.0825);
+			transform: scale(1.0825);
+			-moz-filter: blur(0.2rem);
+			-webkit-filter: blur(0.2rem);
+			-ms-filter: blur(0.2rem);
+			filter: blur(0.2rem);
+		}
+
+		body.is-preload #bg:before {
+			background-color: #000000;
+		}
+
+/* Wrapper */
+
+	#wrapper {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: space-between;
+		-webkit-justify-content: space-between;
+		-ms-justify-content: space-between;
+		justify-content: space-between;
+		position: relative;
+		min-height: 100vh;
+		width: 100%;
+		padding: 4rem 2rem;
+		z-index: 3;
+	}
+
+		#wrapper:before {
+			content: '';
+			display: block;
+		}
+
+		@media screen and (max-width: 1680px) {
+
+			#wrapper {
+				padding: 3rem 2rem;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#wrapper {
+				padding: 2rem 1rem;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#wrapper {
+				padding: 1rem;
+			}
+
+		}
+
+/* Header */
+
+	#header {
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		max-width: 100%;
+		text-align: center;
+	}
+
+		#header > * {
+			-moz-transition: opacity 0.325s ease-in-out;
+			-webkit-transition: opacity 0.325s ease-in-out;
+			-ms-transition: opacity 0.325s ease-in-out;
+			transition: opacity 0.325s ease-in-out;
+			position: relative;
+			margin-top: 3.5rem;
+		}
+
+			#header > *:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: calc(-3.5rem - 1px);
+				left: calc(50% - 1px);
+				width: 1px;
+				height: calc(3.5rem + 1px);
+				background: #ffffff;
+			}
+
+		#header > :first-child {
+			margin-top: 0;
+		}
+
+			#header > :first-child:before {
+				display: none;
+			}
+
+		#header .logo {
+			width: 5.5rem;
+			height: 5.5rem;
+			line-height: 5.5rem;
+			border: solid 1px #ffffff;
+			border-radius: 100%;
+            
+		}
+
+			#header .logo .icon:before {
+				font-size: 2rem;
+			}
+
+		#header .content {
+			background-color: rgba(0, 0, 0, 0.3);
+            border-style: solid;
+			border-color: #ffffff;
+			border-top-width: 1px;
+			border-bottom-width: 1px;
+			max-width: 100%;
+            
+		}
+
+			#header .content .inner {
+				-moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+				-moz-transition-delay: 0.25s;
+				-webkit-transition-delay: 0.25s;
+				-ms-transition-delay: 0.25s;
+				transition-delay: 0.25s;
+				padding: 3rem 2rem;
+				max-height: 40rem;
+				overflow: hidden;
+                }
+
+				#header .content .inner > :last-child {
+					margin-bottom: 0;
+				}
+
+			#header .content p {
+				text-transform: uppercase;
+				letter-spacing: 0.2rem;
+				font-size: 0.8rem;
+				line-height: 2;
+			}
+
+		#header nav ul {
+			display: -moz-flex;
+			display: -webkit-flex;
+			display: -ms-flex;
+			display: flex;
+			margin-bottom: 0;
+			list-style: none;
+			padding-left: 0;
+			border: solid 1px #ffffff;
+			border-radius: 4px;
+		}
+
+/* ============================================================
+   FIX "ZERO-PIXEL" PER LINEA DI CONFINE (METHODOS & SERVIZI)
+   ============================================================ */
+
+/* 1. Il contenitore: solo la cornice esterna */
+#header nav ul {
+    display: flex !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    border: solid 1px #ffffff !important;
+    border-radius: 4px !important;
+    overflow: hidden !important;
+}
+
+/* 2. La Cella: rimuoviamo ogni bordo da qui */
+#header nav ul li {
+    flex: 1 1 auto !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: 0 !important; /* Rimuoviamo il bordo che creava lo sdoppiamento */
+}
+
+/* 3. Il Link: è lui che ora "porta" la linea di confine */
+#header nav ul li a {
+    display: block !important;
+    width: 100% !important;
+    min-width: 8.5rem !important;
+    height: 2.75rem;
+    line-height: 2.75rem;
+    
+    /* PADDING E CENTRATURA */
+    padding: 0 1.25rem !important;
+    text-align: center !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.2rem !important;
+    text-indent: 0.2rem !important; 
+    font-size: 0.8rem !important;
+    
+    /* LA LINEA DI CONFINE: la mettiamo a sinistra di ogni tasto */
+    border-left: solid 1px #ffffff !important;
+    border-bottom: 0 !important;
+    
+    /* Importante per evitare sfasamenti */
+    box-sizing: border-box !important;
+    transition: background-color 0.2s ease !important;
+}
+
+/* 4. Rimuoviamo la linea dal primo tasto (INTRO) per non raddoppiare la cornice */
+#header nav ul li:first-child a {
+    border-left: 0 !important;
+}
+
+/* 5. L'HOVER: ora coprirà perfettamente l'area senza toccare la linea */
+#header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+		#header nav.use-middle:after {
+			content: '';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: calc(50% - 1px);
+			width: 1px;
+			height: 100%;
+			background: #ffffff;
+		}
+
+		#header nav.use-middle ul li.is-middle {
+			border-left: 0;
+		}
+
+		body.is-article-visible #header {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.1rem);
+			-webkit-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			opacity: 0;
+		}
+
+		body.is-preload #header {
+			-moz-filter: blur(0.125rem);
+			-webkit-filter: blur(0.125rem);
+			-ms-filter: blur(0.125rem);
+			filter: blur(0.125rem);
+		}
+
+			body.is-preload #header > * {
+				opacity: 0;
+			}
+
+			body.is-preload #header .content .inner {
+				max-height: 0;
+				padding-top: 0;
+				padding-bottom: 0;
+				opacity: 0;
+			}
+
+		@media screen and (max-width: 980px) {
+
+			#header .content p br {
+				display: none;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			#header > * {
+				margin-top: 2rem;
+			}
+
+				#header > *:before {
+					top: calc(-2rem - 1px);
+					height: calc(2rem + 1px);
+				}
+
+			#header .logo {
+				width: 4.75rem;
+				height: 4.75rem;
+				line-height: 4.75rem;
+			}
+
+				#header .logo .icon:before {
+					font-size: 1.75rem;
+				}
+
+			#header .content .inner {
+				padding: 2.5rem 1rem;
+			}
+
+			#header .content p {
+				line-height: 1.875;
+			}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#header {
+				padding: 1.5rem 0;
+			}
+
+				#header .content .inner {
+					padding: 2.5rem 0;
+				}
+
+				#header nav ul {
+					-moz-flex-direction: column;
+					-webkit-flex-direction: column;
+					-ms-flex-direction: column;
+					flex-direction: column;
+					min-width: 10rem;
+					max-width: 100%;
+				}
+
+					#header nav ul li {
+						border-left: 0;
+						border-top: solid 1px #ffffff;
+					}
+
+						#header nav ul li:first-child {
+							border-top: 0;
+						}
+
+						#header nav ul li a {
+							height: 3rem;
+							line-height: 3rem;
+							min-width: 0;
+							width: 100%;
+						}
+
+				#header nav.use-middle:after {
+					display: none;
+				}
+
+		}
+
+/* Main */
+
+	#main {
+		-moz-flex-grow: 1;
+		-webkit-flex-grow: 1;
+		-ms-flex-grow: 1;
+		flex-grow: 1;
+		-moz-flex-shrink: 1;
+		-webkit-flex-shrink: 1;
+		-ms-flex-shrink: 1;
+		flex-shrink: 1;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		-moz-justify-content: center;
+		-webkit-justify-content: center;
+		-ms-justify-content: center;
+		justify-content: center;
+		-moz-flex-direction: column;
+		-webkit-flex-direction: column;
+		-ms-flex-direction: column;
+		flex-direction: column;
+		position: relative;
+		max-width: 100%;
+		z-index: 3;
+	}
+
+		#main article {
+			-moz-transform: translateY(0.25rem);
+			-webkit-transform: translateY(0.25rem);
+			-ms-transform: translateY(0.25rem);
+			transform: translateY(0.25rem);
+			-moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
+			-webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+			-ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
+			transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
+			padding: 4.5rem 2.5rem 1.5rem 2.5rem ;
+			position: relative;
+			width: 40rem;
+			max-width: 100%;
+			background-color: rgba(27, 31, 34, 0.35);
+			backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Per Safari/Mac */
+        border-radius: 4px;
+    opacity: 0;
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+    
+    /* Opzionale: un'ombra morbida per staccarlo dal fondo */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		}
+
+			#main article.active {
+				-moz-transform: translateY(0);
+				-webkit-transform: translateY(0);
+				-ms-transform: translateY(0);
+				transform: translateY(0);
+				opacity: 1;
+			}
+
+			#main article .close {
+				display: block;
+				position: absolute;
+				top: 0;
+				right: 0;
+				width: 4rem;
+				height: 4rem;
+				cursor: pointer;
+				text-indent: 4rem;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+
+				#main article .close:before {
+					-moz-transition: background-color 0.2s ease-in-out;
+					-webkit-transition: background-color 0.2s ease-in-out;
+					-ms-transition: background-color 0.2s ease-in-out;
+					transition: background-color 0.2s ease-in-out;
+					content: '';
+					display: block;
+					position: absolute;
+					top: 0.75rem;
+					left: 0.75rem;
+					width: 2.5rem;
+					height: 2.5rem;
+					border-radius: 100%;
+					background-position: center;
+					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20px' height='20px' viewBox='0 0 20 20' zoomAndPan='disable'%3E%3Cstyle%3Eline %7B stroke: %23ffffff%3B stroke-width: 1%3B %7D%3C/style%3E%3Cline x1='2' y1='2' x2='18' y2='18' /%3E%3Cline x1='18' y1='2' x2='2' y2='18' /%3E%3C/svg%3E");
+					background-size: 20px 20px;
+					background-repeat: no-repeat;
+				}
+
+				#main article .close:hover:before {
+					background-color: rgba(255, 255, 255, 0.075);
+				}
+
+				#main article .close:active:before {
+					background-color: rgba(255, 255, 255, 0.175);
+				}
+
+		@media screen and (max-width: 736px) {
+
+			#main article {
+				padding: 3.5rem 2rem 0.5rem 2rem ;
+			}
+
+				#main article .close:before {
+					top: 0.875rem;
+					left: 0.875rem;
+					width: 2.25rem;
+					height: 2.25rem;
+					background-size: 14px 14px;
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			#main article {
+				padding: 3rem 1.5rem 0.5rem 1.5rem ;
+			}
+
+		}
+
+/* Footer */
+
+	#footer {
+		-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+		width: 100%;
+		max-width: 100%;
+		margin-top: 2rem;
+		text-align: center;
+	}
+
+		#footer .copyright {
+			letter-spacing: 0.2rem;
+			font-size: 0.6rem;
+			opacity: 0.75;
+			margin-bottom: 0;
+			text-transform: uppercase;
+		}
+
+		body.is-article-visible #footer {
+			-moz-transform: scale(0.95);
+			-webkit-transform: scale(0.95);
+			-ms-transform: scale(0.95);
+			transform: scale(0.95);
+			-moz-filter: blur(0.1rem);
+			-webkit-filter: blur(0.1rem);
+			-ms-filter: blur(0.1rem);
+			filter: blur(0.1rem);
+			opacity: 0;
+		}
+
+		body.is-preload #footer {
+			opacity: 0;
+		}
+
+/* --- LOGO PULITO (Testo Nero -> Bianco) --- */
+
+#header .logo {
+    /* Cerchio Bianco, Sfondo Trasparente */
+    width: 5.5rem;
+    height: 5.5rem;
+    line-height: 5.5rem;
+    border: solid 1px #ffffff;
+    border-radius: 100%;
+    
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    background-color: transparent !important;
+    overflow: hidden;
+}
+
+.logo img {
+    width: 90%; /* Regola la grandezza a piacere */
+    height: auto;
+    
+    /* Inverte il Nero in Bianco. 
+       La trasparenza rimane trasparenza. */
+    filter: invert(1);
+    margin-bottom: 2px; /* Prova 5px, 8px o 10px */
+}
+/* --- TASTI NAVIGAZIONE SCURI (Stile Coerente) --- */
+
+/* 1. Stato Normale dei Bottoni */
+#header nav ul li a {
+    /* Sfondo: Nero con opacità 0.3 (identico al box centrale) */
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    
+    /* Bordo: Bianco molto sottile e trasparente, per non essere pesante */
+    border-color: rgba(255, 255, 255, 0.15) !important;
+    
+    /* Testo: Bianco puro */
+    color: #ffffff !important;
+    
+    
+}
+
+/* ============================================================
+   HOVER ARANCIONE "VIA DI MEZZO" (ELEGANTE E TRASPARENTE)
+   ============================================================ */
+
+#header nav ul li a:hover {
+    /* 1. Sfondo arancione bilanciato (0.2 è il punto magico) */
+    background-color: rgba(255, 145, 0, 0.2) !important;
+    
+    /* 2. Testo arancione (usiamo lo stesso delle icone) */
+    color: #ff9100 !important;
+
+    /* 3. Nessuna ombra, nessuna luce esterna, massima pulizia */
+    box-shadow: none !important;
+    text-shadow: none !important;
+    
+    /* 4. Manteniamo i bordi originali intatti */
+    border-color: transparent !important; 
+    
+    transition: all 0.3s ease;
+}
+
+/* Effetto al click (Active) - Un po' più scuro per dare feedback */
+#header nav ul li a:active {
+    background-color: rgba(255, 145, 0, 0.4) !important;
+    color: #ffffff !important;
+}
+
+/* --- STABILIZZAZIONE GERARCHIA TITOLI (PC e Tablet) --- */
+
+/* Forza il Titolo a restare dominante */
+#header .inner h1 {
+    font-size: 4.3rem !important; /* Dimensione generosa su schermi grandi */
+    line-height: 0.8 !important;
+    letter-spacing: 0.5rem !important;
+    /* Aggiungiamo a sinistra esattamente lo spazio che c'è a destra */
+    padding-left: 0.5rem !important; 
+    text-align: center;
+}
+
+/* Ridimensiona il Sottotitolo per farlo apparire proporzionato */
+#header .inner h2 {
+    font-size: 1.5rem !important; /* Molto più piccolo dell'H1 */
+    letter-spacing: 0.2rem !important;
+    margin-top: 1rem !important;
+    /* Anche qui, compensiamo con la stessa misura dello spacing */
+    padding-left: 0.2rem !important; 
+    text-align: center;
+    }
+    /* Frase emozionale in corsivo */
+#header .inner > strong {
+    display: block;
+    text-align: center; /* Fondamentale per mantenere le due righe bilanciate */
+    font-style: italic; /* Opzionale: un leggero corsivo potrebbe accentuare il tono evocativo */
+    font-size: 1.1rem !important;
+    }
+#header .inner h3 {
+    margin-bottom: 1rem !important;
+    }
+/* Quando la finestra del PC diventa media (tipo tablet) */
+@media screen and (max-width: 980px) {
+    #header .inner h1 {
+        line-height: 0.5 !important;
+        /* Riduciamo sia lo spazio che il "risarcimento" a sinistra */
+        letter-spacing: 0.3rem !important; 
+        padding-left: 0.3rem !important; 
+        
+        /* Rimpiccioliamo il font per non farlo "esplodere" nel rettangolo */
+        font-size: 3rem !important;
+        text-align: center !important;
+    }
+
+    #header .inner h2 {
+        /* Anche il sottotitolo deve scalare in proporzione */
+        letter-spacing: 0.15rem !important;
+        padding-left: 0.15rem !important;
+        font-size: 1rem !important;
+    }
+    /* Frase emozionale in corsivo */
+#header .inner > strong {
+    font-size: 0.9rem !important;
+    }
+    /* Nome*/
+    #header .inner h3 {
+        letter-spacing: 0.05rem !important;
+        font-size: 0.9rem !important;
+        line-height: 0.05 !important;
+        margin-bottom: 1rem !important;
+    }
+}
+/* ============================================================
+   PERSONALIZZAZIONI FILOSOMATICO - MOBILE (PORTRAIT)
+   ============================================================ */
+@media screen and (max-width: 480px) {
+
+    #bg:after {
+        /* Sposta l'inquadratura verso destra per centrare la figura */
+        background-position: 57% 20% !important;
+        background-size: cover;
+    }
+
+    /* 1. Il Contenitore: lo rendiamo bello largo per dare spazio ai testi */
+    #header .inner {
+        padding: 2.5rem 1rem !important;
+        width: 95% !important;        /* Occupa quasi tutto lo schermo */
+        max-width: 360px !important;  /* Ma non diventa immenso su telefoni grandi */
+        min-width: 300px !important;  /* Impedisce che si rimpicciolisca troppo */
+        margin: 0 auto !important;
+    }
+
+    #header .inner h1 {
+        /* Rimpicciolisce il carattere */
+        font-size: 2.3rem !important; 
+        /* Riduce la spaziatura tra le lettere per schermi stretti */
+        letter-spacing: 0.15rem !important; 
+        /* Centratura ottica: aggiunge a sinistra lo stesso spazio che il browser inserisce a destra dell'ultima lettera */
+        padding-left: 0.15rem !important; 
+        /* Forza l'allineamento al centro */
+        text-align: center !important;
+        
+        /* Regola lo spazio sotto il titolo e l'altezza della riga */
+        margin-bottom: 0.5rem !important;
+        line-height: 1.2 !important;
+    }
+    /* 2. Sottotitolo: impostiamo la larghezza "magica" per le 2 righe */
+    #header .inner h2 {
+        font-size: 0.85rem !important;
+        letter-spacing: 0.3rem !important;
+        max-width: 280px !important;  /* Abbastanza largo per 2 righe, troppo stretto per 1 */
+        margin: 0 auto 1.5rem auto !important;
+        line-height: 1.4 !important;
+        display: block !important;
+    }
+
+    /* 3. Frase Emozionale: le togliamo ogni limite di larghezza */
+    #header .inner > strong {
+        display: block !important;
+        width: 100% !important;       /* Usa tutto lo spazio del rettangolo */
+        max-width: none !important;    /* Non deve avere limiti oltre al rettangolo */
+        font-size: 0.8rem !important; /* Un briciolo più piccolo per stare in riga */
+        line-height: 1.5 !important;
+        padding: 0 5px !important;
+    }
+
+    #header .inner h3 {
+        letter-spacing: 0.05rem !important;
+        font-size: 0.9rem !important;
+        line-height: 0.05 !important;
+        margin-bottom: 1rem !important;
+    }
+}
+/* --- STILE PER IL TESTO A COMPARSA --- */
+
+.contenuto-nascosto {
+    display: none;      /* Inizialmente invisibile */
+    opacity: 0;         /* Per l'effetto sfumatura */
+    transition: opacity 0.5s ease;
+    margin-top: 1rem;
+}
+
+.contenuto-nascosto.visibile {
+    display: block;
+    opacity: 1;
+}
+
+
+/* ============================================================
+   IMMAGINI SEMPRE LUMINOSE CON EFFETTO LEVITAZIONE
+   ============================================================ */
+
+/* 1. Stato Normale (Sempre luminose e nitide) */
+article img,
+.image img,
+.image.main img {
+    opacity: 1 !important;            /* Forza la luminosità al 100% sempre */
+    filter: none !important;          /* Rimuove filtri che "spengono" i colori */
+    mix-blend-mode: normal !important;
+    
+    /* Ombra base per dare profondità */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
+    border-radius: 4px !important;
+    
+    /* Transizione fluida per la levitazione */
+    transition: transform 0.4s ease, box-shadow 0.4s ease !important;
+}
+
+/* 2. Stato Hover (Solo levitazione, la luminosità non deve cambiare perché è già al massimo) */
+article img:hover,
+.image img:hover,
+.image.main img:hover {
+    transform: translateY(-5px) !important; /* Levita verso l'alto */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45) !important; /* L'ombra si espande */
+    opacity: 1 !important; /* Confermiamo che rimanga luminosa */
+}
+
+/* 3. Rimuoviamo eventuali velature sui contenitori (per sicurezza) */
+.image.main {
+    border: none !important;
+    opacity: 1 !important;
+}
+
+/* --- REGOLE PER LA SEZIONE LOGOS (LIBRI) --- */
+
+/* Il contenitore di ogni singolo libro */
+.libro-container {
+    /* IL COMANDO MAGICO: 'overflow: hidden' costringe il browser 
+       a riconoscere l'altezza reale dell'elemento, evitando il blocco della pagina */
+    overflow: hidden; 
+    
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.15); /* Linea divisoria sottile */
+}
+
+/* L'ultimo libro della lista non deve avere la linea sotto */
+.libro-container:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+/* Gestione dell'immagine di copertina a sinistra */
+.libro-container .image.left {
+    width: 35%; /* Occupa poco più di un terzo della larghezza */
+    max-width: 180px; /* Non diventa mai gigante */
+    margin-right: 2rem;
+}
+
+/* Titolo del libro */
+.libro-container h3 {
+    color: #ff9100; /* Arancione Filosomatico */
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Stile del pulsante specifico per i libri */
+.libro-container .button {
+    box-shadow: inset 0 0 0 2px #ff9100;
+    color: #ff9100 !important;
+    font-size: 0.7rem;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+}
+
+.libro-container .button:hover {
+    background-color: rgba(255, 145, 0, 0.15);
+}
+/* ============================================================
+   STILE GLOBALE TITOLI H3 (ARANCIONE & GRASSETTO)
+   ============================================================ */
+
+article h3 {
+    color: #ff9100 !important;       /* Arancione Filosomatico */
+    font-weight: 700 !important;     /* Grassetto deciso */
+    letter-spacing: 0.1rem;          /* Leggera spaziatura per eleganza */
+    margin-bottom: 1rem;             /* Spazio sotto il titolo */
+    text-transform: uppercase;       /* (Opzionale) Se li vuoi tutti maiuscoli */
+}
+
+/* Eccezione: se in Logos avevamo definito una regola diversa, 
+   questa globale ora la uniforma automaticamente. */
+/* ============================================================
+   STILE SOCIAL ICONS (ARANCIONE FILOSOMATICO)
+   ============================================================ */
+
+ul.icons li a {
+    /* Stato Normale: Bianco e discreto */
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.5); /* Il cerchio è semitrasparente */
+    transition: all 0.3s ease; /* Tutto si muove in modo fluido */
+}
+
+ul.icons li a:hover {
+    /* Stato Hover: Esplosione di Arancione */
+    color: #ff9100 !important;       /* L'icona diventa arancione */
+    border-color: #ff9100 !important; /* Anche il bordo diventa arancione */
+    
+    /* Effetto "Pop" e Luce */
+    transform: scale(1.15); /* Si ingrandisce del 15% */
+    box-shadow: 0 0 15px rgba(255, 145, 0, 0.4); /* Alone luminoso arancione */
+    background-color: rgba(255, 145, 0, 0.1); /* Sfondo leggermente colorato */
+}
+/* ============================================================
+   SOLUZIONE INTELLIGENTE: DESKTOP ALLINEATO / MOBILE ORIGINALE
+   ============================================================ */
+
+/* 1. REGOLA SOLO PER PC (Schermi larghi più di 980px) 
+   Qui applichiamo l'allineamento geometrico che ti piace. */
+@media screen and (min-width: 981px) {
+    #header .content .inner {
+        width: auto;
+        /* Questa misura si attiva SOLO su PC, quindi non romperà mai il cellulare */
+        min-width: 42.5rem; 
+    }
+}
+
+/* 2. REGOLA PER TABLET E SCHERMI MEDI (Tra 481px e 980px)
+   Qui diciamo al menu di impilarsi (come volevi), ma mantenendo 
+   lo stile "sottile" ed elegante originale, senza ingrassare i tasti. */
+@media screen and (max-width: 980px) {
+    
+    /* Il menu diventa verticale */
+    #header nav ul {
+        flex-direction: column;
+        min-width: 0;
+    }
+
+    /* Sistemiamo i bordi per la visuale verticale */
+    #header nav ul li {
+        border-left: 0;
+        border-top: solid 1px rgba(255, 255, 255, 0.15) !important;
+    }
+    
+    /* Il primo tasto non deve avere bordo sopra */
+    #header nav ul li:first-child {
+        border-top: 0;
+    }
+    
+    /* Manteniamo i tasti dell'altezza originale elegante */
+    #header nav ul li a {
+        height: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+/* ============================================================
+   STILE LINK INTERNI (ARANCIONE FILOSOMATICO)
+   ============================================================ */
+
+/* Colore base del link nel testo */
+article p a, 
+article li a {
+    color: #ff9100 !important;
+    font-weight: 400; 
+    text-decoration: none; /* Togliamo la sottolineatura classica se non ti piace */
+    border-bottom: dotted 1px rgba(255, 145, 0, 0.5); /* Sottolineatura sottile ed elegante */
+    transition: all 0.2s ease;
+}
+
+/* Effetto quando ci passi sopra col mouse */
+article p a:hover, 
+article li a:hover {
+    color: #ffb347 !important; /* Un arancione leggermente più chiaro al passaggio */
+    border-bottom-color: #ff9100; /* La linea sotto diventa solida */
+    text-shadow: 0 0 5px rgba(255, 145, 0, 0.3);
+}
+/* ============================================================
+   SUPER-BLOCCO UNIFICATO: ESPANDI + LIBRI + FORM CONTATTI
+   ============================================================ */
+
+/* 1. LO STATO DI BASE (Tutti uguali) */
+.tasto-esplora,
+.libro-container .button,
+input[type="submit"], /* Aggiunto: Tasto Invia */
+input[type="reset"],  /* Aggiunto: Tasto Reset */
+button {
+    display: inline-block;
+    height: 2.75rem !important;
+    line-height: 2.75rem !important;
+    padding: 0 1.5rem !important;
+    margin-top: 1.5rem;
+    
+    /* CORNICE E COLORI */
+    box-shadow: inset 0 0 0 2px #ff9100 !important; 
+    border-radius: 4px;
+    border: none !important;
+    background-color: transparent !important;
+    
+    /* TESTO */
+    color: #ff9100 !important;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 0.75rem !important;
+    font-weight: 600 !important;
+    text-decoration: none;
+    text-align: center;
+    white-space: nowrap;
+    
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-image: none !important; 
+    -webkit-appearance: none; /* Pulisce lo stile nativo su iPhone/Mac */
+}
+
+/* 2. L'EFFETTO HOVER (Tutti si illuminano uguale) */
+.tasto-esplora:hover,
+.libro-container .button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: rgba(255, 145, 0, 0.15) !important;
+    color: #ffffff !important;
+    box-shadow: inset 0 0 0 2px #ff9100, 0 0 15px rgba(255, 145, 0, 0.4) !important;
+    transform: translateY(-2px);
+}
+
+/* 3. L'EFFETTO ACTIVE (Click) */
+.tasto-esplora:active,
+.libro-container .button:active,
+input[type="submit"]:active,
+input[type="reset"]:active,
+button:active {
+    background-color: rgba(255, 145, 0, 0.4) !important;
+    transform: translateY(1px);
+}
+
+/* 4. L'ICONA FRECCIA (Solo per Espandi e Libri) */
+/* Nota: I tasti del form (input) vengono ignorati qui perché non supportano le icone css */
+.tasto-esplora::after,
+.libro-container .button::after {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 0.8rem;
+    font-size: 0.8rem;
+    transition: margin-left 0.3s ease;
+}
+
+/* Animazione freccia in hover */
+.tasto-esplora:hover::after,
+.libro-container .button:hover::after {
+    margin-left: 1.2rem;
+}
+/* ============================================================
+   FORZATURA DEFINITIVA COLORE TASTO (Incolla alla fine del file)
+   ============================================================ */
+
+/* 1. STATO NORMALE: ARANCIONE */
+#wrapper #main form input[type="submit"],
+#wrapper #main form input[type="reset"],
+#wrapper #main form button {
+    color: #ff9100 !important;         /* VINCE SUL GRIGIO */
+    border-color: #ff9100 !important;  /* VINCE SUL BIANCO */
+    box-shadow: inset 0 0 0 2px #ff9100 !important; /* SPESSORE 2PX */
+    font-weight: 600 !important;
+    opacity: 1 !important;
+}
+
+/* 2. STATO HOVER: BIANCO CON GLOW */
+#wrapper #main form input[type="submit"]:hover,
+#wrapper #main form input[type="reset"]:hover,
+#wrapper #main form button:hover {
+    background-color: rgba(255, 145, 0, 0.15) !important;
+    color: #ffffff !important;        /* TORNA BIANCO */
+    box-shadow: inset 0 0 0 2px #ff9100, 0 0 15px rgba(255, 145, 0, 0.4) !important;
+}
+/* ============================================================
+   STILE TASTO RESET (DISCRETO / SECONDARIO)
+   ============================================================ */
+
+/* 1. Stato Normale: Bianco, sottile, quasi invisibile */
+#wrapper #main form input[type="reset"] {
+    color: rgba(255, 255, 255, 0.6) !important; /* Bianco sporco (meno contrasto) */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.3) !important; /* Bordo sottilissimo (1px) e trasparente */
+    font-weight: 400 !important; /* Niente grassetto */
+    background-color: transparent !important;
+}
+
+/* 2. Stato Hover: Diventa un po' più visibile (ma niente glow esagerato) */
+#wrapper #main form input[type="reset"]:hover {
+    color: #ff9100 !important; /* Diventa arancione per feedback */
+    box-shadow: inset 0 0 0 1px #ff9100 !important; /* Bordo arancione sottile */
+    background-color: transparent !important; /* Niente sfondo colorato */
+    text-shadow: none !important; /* Niente luce neon */
+    transform: none !important; /* Niente saltello */
+}
+
+/* 3. Stato Active (Click): Semplice pressione */
+#wrapper #main form input[type="reset"]:active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+/* ============================================================
+   NUOVA SEZIONE SERVIZI (GRID SYSTEM)
+   ============================================================ */
+
+/* 1. La Griglia Contenitore */
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem; /* Spazio tra le card */
+    margin-top: 2rem;
+}
+
+/* 2. La Card del Servizio */
+.service-card {
+    background-color: rgba(255, 255, 255, 0.03); /* Fondo appena percettibile */
+    border: 1px solid rgba(255, 255, 255, 0.1);  /* Bordo sottile elegante */
+    border-radius: 4px;
+    padding: 2rem;
+    flex: 1 1 300px; /* Larghezza minima 300px, poi si espande */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Effetto Hover sulla Card */
+.service-card:hover {
+    transform: translateY(-5px); /* Leggera levitazione */
+    border-color: rgba(255, 145, 0, 0.5); /* Il bordo si accende di arancione */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* 3. Icona in cima alla card (Opzionale, richiede FontAwesome) */
+.service-card .icon-header {
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 0.3);
+    margin-bottom: 1rem;
+    text-align: center;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover .icon-header {
+    color: #ff9100; /* L'icona si accende in hover */
+    text-shadow: 0 0 10px rgba(255, 145, 0, 0.4);
+}
+
+/* 4. Titoli e Sottotitoli dentro le card */
+.service-card h3 {
+    text-align: center;
+    margin-bottom: 0.5rem !important;
+    font-size: 1.1rem;
+}
+
+.service-card .subtitle {
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 1.5rem;
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.2);
+    padding-bottom: 1rem;
+}
+
+/* 5. Pulsanti dentro le card */
+.service-card .actions {
+    margin-top: auto; /* Spinge il bottone sempre in fondo */
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.service-card .button {
+    width: 100%; /* Bottone a tutta larghezza nella card */
+    margin-top: 1rem;
+}
+/* ========================================= */
+/* SLIDER TESTIMONIALS FILOSOMATICO          */
+/* ========================================= */
+
+.testimonial-container {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.testimonial-slide {
+    display: none; 
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.testimonial-slide.active {
+    display: block; 
+}
+
+.testimonial-slide p {
+    font-style: italic;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.testimonial-slide .author {
+    display: block;
+    color: #ff9100;
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.15rem;
+}
+
+/* Frecce di navigazione */
+.slider-controls {
+    margin-top: 2.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.slider-controls button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #ffffff;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+/* Stato Hover delle frecce: Effetto Neon */
+.slider-controls button:hover {
+    border-color: #ff9100;
+    color: #ff9100;
+    box-shadow: inset 0 0 0 1px #ff9100, 0 0 15px rgba(255, 145, 0, 0.4) !important;
+    transform: translateY(-2px);
+}
+
+/* Animazione di entrata del testo */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* --- PAGINA LOGOS: STILE IMMAGINI LIBRI (.libro-container) --- */
+
+/* 1. Rimuove il rettangolo grigio, i bordi e i padding dal contenitore dell'immagine */
+#logos .libro-container span.image.left {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+	margin-right: 2rem !important;  /* Distanzia il testo alla destra del libro */
+    margin-bottom: 1.5rem !important; /* Distanzia il testo sotto al libro */
+}
+
+/* 2. Disabilita eventuali pseudo-elementi (spesso usati dal template per le cornici) */
+#logos .libro-container span.image.left:before,
+#logos .libro-container span.image.left:after {
+    display: none !important;
+}
+
+/* 3. Applica l'ombra realistica direttamente alla copertina del libro */
+#logos .libro-container span.image.left img {
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.6) !important;
+    border-radius: 2px !important; /* Leggerissima smussatura per realismo */
+    transition: all 0.3s ease;
+}
+
+/* 4. Effetto Hover: il libro si solleva leggermente */
+#logos .libro-container span.image.left img:hover {
+    transform: translateY(-3px);
+    box-shadow: 12px 20px 30px rgba(0, 0, 0, 0.8) !important;
+}
+/* --- PAGINA INTRO (BIOS): FIX E VELATURA IMMAGINE A DESTRA --- */
+
+/* Rimuove il rettangolo scuro e setta i margini */
+#wrapper #main article#intro .image.right {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    margin-left: 2rem !important;
+    margin-bottom: 1rem !important;
+}
+
+#wrapper #main article#intro .image.right:before,
+#wrapper #main article#intro .image.right:after {
+    display: none !important;
+}
+
+/* Applica ombra e VELATURA (riduce luminosità al 75%) */
+#wrapper #main article#intro .image.right img {
+    box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.5) !important; 
+    border-radius: 2px !important;
+    transition: all 0.3s ease !important;
+    filter: brightness(0.85) !important; 
+}
+
+/* Effetto Hover: sollevamento e ritorno alla piena luminosità */
+#wrapper #main article#intro .image.right img:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 10px 18px 25px rgba(0, 0, 0, 0.7) !important;
+    filter: brightness(1) !important;
+}
+/* --- PAGINA INTRO (BIOS): FIX E VELATURA IMMAGINE A SINISTRA (.image.left) --- */
+
+/* 1. Rimuove il rettangolo scuro e setta i margini a DESTRA e SOTTO */
+#wrapper #main article#intro .image.left {
+    background-color: transparent !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    /* Margine a destra per distanziare il testo */
+    margin-right: 2rem !important;
+    /* Margine sotto per quando il testo finisce e l'immagine "rientra" */
+    margin-bottom: 1rem !important;
+}
+
+/* 2. Disabilita eventuali pseudo-elementi (cornici nascoste) */
+#wrapper #main article#intro .image.left:before,
+#wrapper #main article#intro .image.left:after {
+    display: none !important;
+}
+
+/* 3. Applica ombra realistica e VELATURA (riduce luminosità al 75%, come l'altra) */
+#wrapper #main article#intro .image.left img {
+    /* Ombra proiettata in basso a destra */
+    box-shadow: 10px 15px 25px rgba(0, 0, 0, 0.5) !important;
+    border-radius: 2px !important;
+    transition: all 0.3s ease !important;
+    /* Velatura per integrarla nello sfondo scuro (aggiustabile tra 0.1 e 1.0) */
+    filter: brightness(0.75) !important;
+}
+
+/* 4. Effetto Hover: sollevamento e ritorno alla piena luminosità */
+#wrapper #main article#intro .image.left img:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 12px 20px 30px rgba(0, 0, 0, 0.7) !important;
+    /* L'immagine si "accende" tornando normale al passaggio del mouse */
+    filter: brightness(1) !important;
+}
+
+/* --- SPAZIATURA TITOLI IN METHODOS --- */
+
+/* Applica uno spazio generoso sopra ogni sottotitolo di Methodos */
+#wrapper #main article#methodos h3 {
+    margin-top: 3rem !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Opzionale: una riga sottilissima di separazione */
+    padding-top: 2rem;
+}
+
+/* Rimuove lo spazio eccessivo solo dal primissimo titolo (Embodied Philosophical Counseling) */
+#wrapper #main article#methodos h3:first-of-type {
+    margin-top: 0 !important;
+    border-top: none !important;
+    padding-top: 0 !important;
+}
+/* ============================================================
+   REVISIONE FINALE FILOSOMATICO
+   ============================================================ */
+
+/* 1. EVIDENZA: Arancione originale, ma niente effetto neon */
+.evidenza {
+    color: #ff9100 !important;
+    font-weight: 600 !important;
+    text-shadow: none !important;
+    opacity: 1 !important;
+}
+
+/* 2. PARAGRAFI: Spazio armonioso tra i blocchi di testo */
+#main article p {
+    margin-bottom: 1.2rem !important;
+    line-height: 1.6 !important;
+}
+
+/* 3. MOBILE: Testo leggibile e footer blindato */
+@media screen and (max-width: 736px) {
+    
+    /* Ingrandiamo solo i testi delle sezioni per il cellulare */
+    #main article p, 
+    #main article li {
+        font-size: 1.15rem !important; 
+        line-height: 1.6 !important;
+    }
+
+    /* FOOTER: Forziamo 10 pixel. Non può più sbagliare. */
+    #footer p, 
+    #footer .copyright, 
+    footer#footer p {
+        font-size: 10px !important;    
+        letter-spacing: 0.1rem !important;
+        opacity: 0.6 !important;
+        line-height: 1.2 !important;
+        text-transform: uppercase !important;
+    }
+}
+/* FIX MOBILE: lista Servizi e footer */
+@media screen and (max-width: 736px) {
+
+    #main article#about > ul li {
+        font-size: 1rem !important;
+    }
+
+    #footer,
+    #footer p, 
+    #footer .copyright, 
+    footer#footer p {
+        font-size: 10px !important;    
+        letter-spacing: 0.1rem !important;
+        opacity: 0.6 !important;
+        line-height: 1.2 !important;
+        text-transform: uppercase !important;
+    }
+}
