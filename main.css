@@ -2503,14 +2503,18 @@ button:active {
 /* 3. MOBILE: Testo leggibile e footer blindato */
 @media screen and (max-width: 736px) {
     
-    /* Ingrandiamo solo i testi delle sezioni per il cellulare */
     #main article p, 
     #main article li {
         font-size: 1.15rem !important; 
         line-height: 1.6 !important;
     }
 
-    /* FOOTER: Forziamo 10 pixel. Non può più sbagliare. */
+    /* AGGIUNTA: eccezione per lista Servizi */
+    #main article#about > ul li {
+        font-size: 1rem !important;
+        line-height: 1.6 !important;
+    }
+
     #footer p, 
     #footer .copyright, 
     footer#footer p {
