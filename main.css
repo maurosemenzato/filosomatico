@@ -2515,3 +2515,9 @@ button:active {
         text-transform: uppercase !important;
     }
 }
+@media (max-width: 600px) {
+    p {
+        font-size: inherit !important;
+        margin-bottom: inherit !important;
+    }
+}
