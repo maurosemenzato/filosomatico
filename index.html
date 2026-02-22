@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     
     <meta name="description" content="Dr. Mauro Semenzato – Embodied Philosophical Counseling e Somatic Experiencing. Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online." />
+    <link rel="canonical" href="https://filosomatico.com/" />
     
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.filosomatico.com/" />
+    <meta property="og:url" content="https://filosomatico.com/" />
     <meta property="og:title" content="Filosomatico | Somatic Experiencing | Embodied Philosophical Counseling" />
     <meta property="og:description" content="Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online con il Dr. Mauro Semenzato." />
-    <meta property="og:image" content="https://www.filosomatico.com/images/og-image.jpg" />
+    <meta property="og:image" content="https://filosomatico.com/images/og-image.jpg" />
 
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.filosomatico.com/" />
+    <meta property="twitter:url" content="https://filosomatico.com/" />
     <meta property="twitter:title" content="Filosomatico | Somatic Experiencing | Embodied Philosophical Counseling" />
     <meta property="twitter:description" content="Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online con il Dr. Mauro Semenzato." />
-    <meta property="twitter:image" content="https://www.filosomatico.com/images/og-image.jpg" />
+    <meta property="twitter:image" content="https://filosomatico.com/images/og-image.jpg" />
 
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="assets/css/main.css?v=4.0" />
@@ -26,16 +27,48 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "ProfessionalService",
-      "name": "Filosomatico - Dr. Mauro Semenzato",
-      "description": "Dr. Mauro Semenzato – Embodied Philosophical Counseling e Somatic Experiencing. Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mestre",
-        "addressRegion": "VE",
-        "addressCountry": "IT"
-      },
-      "url": "https://www.filosomatico.com"
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://filosomatico.com/#website",
+          "url": "https://filosomatico.com",
+          "name": "Filosomatico",
+          "publisher": { "@id": "https://filosomatico.com/#organization" }
+        },
+        {
+          "@type": "ProfessionalService",
+          "@id": "https://filosomatico.com/#service",
+          "name": "Filosomatico - Dr. Mauro Semenzato",
+          "url": "https://filosomatico.com",
+          "image": "https://filosomatico.com/images/og-image.jpg",
+          "description": "Embodied Philosophical Counseling e Somatic Experiencing a Mestre e online.",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Mestre",
+            "addressRegion": "VE",
+            "addressCountry": "IT"
+          }
+        },
+        {
+          "@type": "Organization",
+          "@id": "https://filosomatico.com/#organization",
+          "name": "Filosomatico",
+          "url": "https://filosomatico.com",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://filosomatico.com/images/logo.png"
+          },
+          "sameAs": ["https://www.linkedin.com/in/maurosemenzato/"]
+        },
+        {
+          "@type": "Person",
+          "@id": "https://filosomatico.com/#author",
+          "name": "Mauro Semenzato",
+          "jobTitle": "Philosophical Counselor",
+          "url": "https://filosomatico.com",
+          "sameAs": ["https://www.linkedin.com/in/maurosemenzato/"]
+        }
+      ]
     }
     </script>
 </head>
