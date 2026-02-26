@@ -2719,3 +2719,23 @@ button:active {
     margin-top: 0.25rem;
     line-height: 1.3;
 }
+/* =========================================================
+   SEZIONE BIOS (INTRO) - Regole di Layout Aggiuntive
+   ========================================================= */
+
+#wrapper #main article#intro .bios-socials {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
+
+#wrapper #main article#intro hr.bios-divider {
+    border: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#wrapper #main article#intro h3.bios-testimonials-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
