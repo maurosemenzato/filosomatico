@@ -2557,3 +2557,165 @@ button:active {
         font-size: 0.9rem !important;
     }
 }
+/* =========================================================
+   SEZIONE TESTIMONIAL FILOSOMATICO
+   Design System: #ff9100, Glassmorphism, B/W to Color Hover
+   ========================================================= */
+
+/* 1. Layout Griglia */
+#wrapper #main article .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    align-items: stretch; /* Fa sì che le card nella stessa riga abbiano la stessa altezza */
+}
+
+/* 2. Struttura della Card */
+#wrapper #main article .testimonial-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-left: 3px solid #ff9100;
+    border-radius: 4px;
+    padding: 2.5rem 2rem 2rem 2rem;
+    position: relative;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 3. Effetto Hover sulla Card */
+#wrapper #main article .testimonial-card:hover {
+    background: rgba(255, 145, 0, 0.04);
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5), inset 0 0 0 1px rgba(255, 145, 0, 0.2);
+    border-color: rgba(255, 145, 0, 0.4);
+}
+
+/* 4. Header e Avatar (Il tocco Organico/Neon) */
+#wrapper #main article .testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+#wrapper #main article .avatar-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    filter: grayscale(100%) contrast(1.1) brightness(0.9); /* Effetto B/N drammatico */
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    /* Ottimizzazione Anti-Glitch (Evita il bordo nero) */
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+#wrapper #main article .avatar-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    /* Transizione spostata qui per zoom interno */
+    transition: transform 0.5s ease;
+}
+
+/* Magia Hover: La cornice si accende, i colori tornano, ma resta FERMA (Specificità Massima) */
+#wrapper #main article .testimonial-card:hover .avatar-container,
+#wrapper #main article .avatar-container:hover {
+    filter: grayscale(0%) contrast(1.05) brightness(1) !important;
+    border-color: #ff9100 !important;
+    box-shadow: 0 0 20px rgba(255, 145, 0, 0.4) !important;
+    transform: translateZ(0) !important; /* Annulla qualsiasi translateY nativo del template */
+}
+
+/* Magia Hover: La foto fa uno zoom interno senza scoprire lo sfondo (Specificità Massima) */
+#wrapper #main article .testimonial-card:hover .avatar-container img,
+#wrapper #main article .avatar-container:hover img,
+#wrapper #main article .avatar-container img:hover {
+    transform: scale(1.12) !important; /* Forza lo zoom e impedisce rimpicciolimenti */
+}
+/* 5. Dettagli Tipografici */
+#wrapper #main article .quote-icon {
+    font-family: Georgia, serif;
+    font-size: 5rem;
+    color: #ff9100;
+    opacity: 0.15;
+    line-height: 0.8;
+    margin-top: -1rem;
+}
+
+#wrapper #main article .testimonial-text {
+    font-style: italic;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 0.95rem;
+    text-align: left;
+    margin-bottom: 2rem !important;
+    flex-grow: 1; /* Spinge l'autore sempre in basso se i testi hanno lunghezze diverse */
+}
+
+/* Evidenziatore Filosomatico */
+#wrapper #main article .testimonial-text .highlight {
+    color: #ffb347; /* Un arancione leggermente più chiaro per la leggibilità */
+    font-weight: 600;
+    background: rgba(255, 145, 0, 0.12);
+    padding: 0.1rem 0.3rem;
+    border-radius: 2px;
+}
+
+/* 6. Sezione Autore */
+#wrapper #main article .testimonial-author {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.2rem;
+}
+
+#wrapper #main article .author-name {
+    color: #ff9100;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.85rem;
+    margin-bottom: 0.2rem;
+}
+
+#wrapper #main article .author-role {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    opacity: 0.6;
+    letter-spacing: 0.05rem;
+    color: #ffffff;
+}
+
+/* Link speciale per il libro dell'autrice */
+#wrapper #main article .author-link {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    color: #ff9100;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(255, 145, 0, 0.5);
+    align-self: flex-start;
+    transition: all 0.3s ease;
+}
+
+#wrapper #main article .author-link:hover {
+    color: #ffb347;
+    border-bottom-style: solid;
+    text-shadow: 0 0 8px rgba(255, 145, 0, 0.4);
+}
+
+#wrapper #main article .author-book {
+    color: rgba(255, 255, 255, 0.6); /* Brillantezza identica al ruolo */
+    font-size: 0.85rem; /* Fissato a 0.85rem, esattamente come author-role */
+    font-style: italic; /* Corsivo per i titoli */
+    margin-top: 0.25rem;
+    line-height: 1.3;
+}
