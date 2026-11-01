@@ -85,6 +85,69 @@
         @media screen and (max-width: 480px) { .home-testimonial { padding: 1rem; } .home-testimonial .ht-quote { flex-direction: column; text-align: center; gap: 0.6rem; } }
         @media (prefers-reduced-motion: reduce) { .home-testimonial .ht-quote { transition: none; } }
     </style>
+
+    <style>
+        /* ===== Home rinnovata — 1 novembre 2026 ===== */
+
+        /* Sfondo: ritratto (desktop) e versione verticale (mobile).
+           Desktop: foto spostata a sinistra del 5% (entro il margine dello zoom del template, nessun vuoto a destra);
+           in verticale la testa supera di poco il bordo alto, con lo stesso taglio su ogni schermo */
+        #bg:after { background-image: url("images/bg-desktop.jpg") !important;
+                    background-position: right 5vw top clamp(calc(100vh - max(62.5vw, 100vh) - 5vh), calc(4.222vh - max(4.219vw, 6.75vh)), 0px) !important; }
+        @media screen and (max-width: 480px) {
+            #bg:after { background-image: url("images/bg-mobile.jpg") !important; background-size: auto 101.1rem !important;
+                        background-position: calc(96vw - 31rem) -3.35rem !important; background-repeat: no-repeat !important;
+                        background-color: #141617; transform: none !important; }
+        }
+
+        /* Pulsante del colloquio gratuito */
+        .home-cta { margin: 1.2rem 0 0 0 !important; justify-content: center; }
+        .home-cta .button { margin-top: 0 !important; }
+        @media screen and (max-width: 480px) {
+            .home-cta .button { white-space: normal !important; height: auto !important; line-height: 1.4 !important; padding: 0.7rem 1rem !important; letter-spacing: 0.12rem !important; }
+        }
+
+        /* Testimonianza in home: senza foto, nome · qualifica sulla stessa riga */
+        .home-testimonial { padding-bottom: 1.1rem; }
+        .home-testimonial .ht-quote { justify-content: center; text-align: center; }
+        .home-testimonial .ht-author, .home-testimonial .ht-role { display: inline !important; }
+        .home-testimonial .ht-author::before { content: "\A"; white-space: pre; }   /* nome sempre a capo dopo la citazione */
+        .home-testimonial .ht-author::after { content: "\00a0\00b7\00a0"; letter-spacing: 0; }
+        .home-testimonial .ht-link { margin-top: 0.5rem !important; }
+
+        /* Icone social sotto il menu */
+        #footer .footer-icons { margin: 0 0 1rem 0; padding: 0; }
+        #footer .footer-icons li a { width: 2rem; height: 2rem; line-height: 2rem; font-size: 0.85rem; }
+
+        /* Desktop: colonna a sinistra agganciata al ritratto, dimensioni proporzionali allo schermo */
+        @media screen and (min-width: 981px) {
+            html { font-size: clamp(14px, min(1.218vw, 1.93vh), 21.33px) !important; }
+            :root { --R: calc(50vw + 1.125 * (50vw - max(100vw, 160vh) + max(57.3vw, 91.69vh)));
+                    --L: max(2rem, min(6.1vw, calc(var(--R) - 42.5rem))); }
+            #wrapper { align-items: flex-start !important; padding-left: var(--L) !important; }
+            #header { width: calc(var(--R) - var(--L)); }
+            #header .content, #header nav, #header nav ul { width: 100% !important; }
+            #header .content .inner { min-width: 0 !important; width: 100% !important; padding-top: 2.3rem !important; padding-bottom: 2.3rem !important; }
+            #header > * { margin-top: 3.1rem !important; }
+            #header > *:before { top: calc(-3.1rem - 1px) !important; height: calc(3.1rem + 1px) !important; }
+            #header > :first-child { margin-top: 0 !important; }
+            #footer { align-self: flex-start; width: calc(var(--R) - var(--L)); max-width: none; }
+            #footer .copyright { letter-spacing: 0.12rem !important; }
+
+            /* Pannelli: testo più grande e più pieno */
+            #main article { width: 44rem !important; }
+            #wrapper #main article p, #wrapper #main article ul li, #wrapper #main article ol li { font-size: 1.12rem !important; font-weight: 400 !important; }
+            #wrapper #main article .testimonial-text { font-size: 1.05rem !important; }
+        }
+
+        /* Pannelli aperti: ritratto a fuoco su desktop; su mobile resta sfocato, con velatura più scura */
+        @media screen and (min-width: 481px) {
+            body.is-article-visible #bg:after { filter: none !important; transform: scale(1.125) !important; }
+        }
+        @media screen and (max-width: 480px) {
+            #main article { background-color: rgba(27, 31, 34, 0.55) !important; }
+        }
+    </style>
 </head>
     <body class="is-preload">
 
@@ -105,26 +168,22 @@
                         </div>
                         
                         <h3 style="margin-bottom: 0;"><strong>dr. Mauro Semenzato</strong></h3>
+
+                        <ul class="actions home-cta">
+                            <li><a href="#contact" class="button">Colloquio gratuito di 20-25 min</a></li>
+                        </ul>
                         
                         <div class="home-testimonial">
                             <div class="ht-stack">
                                 <div class="ht-quote ht-active">
-                                    <img src="images/enrico.jpg" alt="" />
-                                    <p class="ht-text">«Mi ha insegnato a ricondurre la mente al corpo per ritrovare calma e centratura.»<span class="ht-author">Enrico Gallorini</span><span class="ht-role">CEO @ GRS Research &amp; Strategy, Dubai</span></p>
+                                    <p class="ht-text">«Mi ha insegnato a ricondurre la mente al corpo per ritrovare calma e centratura.»<span class="ht-author">Enrico Gallorini</span><span class="ht-role">Imprenditore</span></p>
                                 </div>
                                 <div class="ht-quote">
-                                    <img src="images/rivkah.jpg" alt="" />
-                                    <p class="ht-text">«Grazie Mauro per avermi accompagnata sempre con il massimo rispetto, sensibilità e attenzione.»<span class="ht-author">Rivkah Hetherington</span><span class="ht-role">Psicologa, Arteterapeuta, Somatic Experiencing Practitioner</span></p>
+                                    <p class="ht-text">«Grazie Mauro per avermi accompagnata sempre con il massimo rispetto, sensibilità e attenzione.»<span class="ht-author">Rivkah Hetherington</span><span class="ht-role">Psicologa, Arteterapeuta</span></p>
                                 </div>
                             </div>
                             <a href="#about" class="scrolly-link ht-link" data-target="testimonianze-servizi">Leggi le testimonianze</a>
                         </div>
-                        
-                        <ul class="icons" style="margin-top: 1.5rem; margin-bottom: 0;">
-                            <li><a href="https://www.instagram.com/filosomatico" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-                            <li><a href="https://www.linkedin.com/in/maurosemenzato" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-                            <li><a class="icon brands fa-youtube" title="Canale in arrivo" aria-disabled="true" style="cursor: default;"><span class="label">YouTube (canale in arrivo)</span></a></li>
-                        </ul>
                     </div>
                 </div>
                 <nav>
@@ -693,8 +752,8 @@
 </div>
         
         <div style="margin-bottom: 2rem;">
-            <input type="checkbox" id="privacy" name="privacy" required />
-            <label for="privacy" style="font-size: 0.85rem; text-transform: none;">
+            <input type="checkbox" id="consenso-privacy" name="privacy" required />
+            <label for="consenso-privacy" style="font-size: 0.85rem; text-transform: none;">
                 Acconsento al trattamento dei dati personali per la gestione della mia richiesta (<a href="#privacy">leggi l'informativa</a>).
             </label>
         </div>
@@ -732,6 +791,11 @@
 
 				<!-- Footer -->
 					<footer id="footer">
+						<ul class="icons footer-icons">
+							<li><a href="https://www.instagram.com/filosomatico" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.linkedin.com/in/maurosemenzato" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a class="icon brands fa-youtube" title="Canale in arrivo" aria-disabled="true" style="cursor: default;"><span class="label">YouTube (canale in arrivo)</span></a></li>
+						</ul>
 						<p class="copyright">&copy; 2026 Filosomatico | Mauro Semenzato – P.IVA 03960860272 | <a href="#privacy">Privacy</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
