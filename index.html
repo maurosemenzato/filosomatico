@@ -3,21 +3,21 @@
 <head>
     <title>Filosomatico | Somatic Experiencing | Embodied Philosophical Counseling</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     
-    <meta name="description" content="Dr. Mauro Semenzato – Embodied Philosophical Counseling e Somatic Experiencing. Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online." />
+    <meta name="description" content="Dr. Mauro Semenzato – Embodied Philosophical Counseling e Somatic Experiencing. Integrazione di corpo e parola per gestire stress e burnout e riflettere sui comportamenti di dipendenza, a Mestre e online." />
     <link rel="canonical" href="https://filosomatico.com/" />
     
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://filosomatico.com/" />
     <meta property="og:title" content="Filosomatico | Somatic Experiencing | Embodied Philosophical Counseling" />
-    <meta property="og:description" content="Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online con il Dr. Mauro Semenzato." />
+    <meta property="og:description" content="Integrazione di corpo e parola per gestire stress e burnout e riflettere sui comportamenti di dipendenza, a Mestre e online con il Dr. Mauro Semenzato." />
     <meta property="og:image" content="https://filosomatico.com/images/screenhome.jpg" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://filosomatico.com/" />
     <meta property="twitter:title" content="Filosomatico | Somatic Experiencing | Embodied Philosophical Counseling" />
-    <meta property="twitter:description" content="Integrazione di corpo e parola per affrontare stress, addiction e burnout a Mestre e online con il Dr. Mauro Semenzato." />
+    <meta property="twitter:description" content="Integrazione di corpo e parola per gestire stress e burnout e riflettere sui comportamenti di dipendenza, a Mestre e online con il Dr. Mauro Semenzato." />
     <meta property="twitter:image" content="https://filosomatico.com/images/screenhome.jpg" />
 
     <link rel="icon" type="image/png" href="images/favicon.png">
@@ -71,6 +71,20 @@
       ]
     }
     </script>
+    <style>
+        /* Testimonianze a rotazione in home */
+        .home-testimonial { max-width: 30rem; margin: 1.75rem auto 0; padding: 1.1rem 1.4rem 0.9rem; border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 6px; background: rgba(255, 255, 255, 0.10); -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); box-shadow: 0 0 28px rgba(255, 255, 255, 0.10); }
+        .home-testimonial .ht-stack { display: grid; }
+        .home-testimonial .ht-quote { grid-area: 1 / 1; display: flex; align-items: center; gap: 1rem; text-align: left; opacity: 0; visibility: hidden; transition: opacity 0.8s ease, visibility 0.8s ease; }
+        .home-testimonial .ht-quote.ht-active { opacity: 1; visibility: visible; }
+        .home-testimonial .ht-quote img { flex: 0 0 auto; width: 3.6rem; height: 3.6rem; border-radius: 50%; object-fit: cover; border: 1px solid rgba(255, 255, 255, 0.7); }
+        .home-testimonial .ht-text { margin: 0; font-style: normal; text-transform: none !important; letter-spacing: 0.02rem !important; line-height: 1.5 !important; font-size: clamp(0.85rem, 2.4vw, 1rem) !important; }
+        .home-testimonial .ht-author { display: block; margin-top: 0.35rem; font-style: normal; font-size: 0.65rem; letter-spacing: 0.15rem; text-transform: uppercase; opacity: 0.85; }
+        .home-testimonial .ht-role { display: block; margin-top: 0.15rem; font-style: normal; font-size: 0.75rem; letter-spacing: 0.03rem; opacity: 0.75; }
+        .home-testimonial .ht-link { display: inline-block; margin-top: 0.8rem; font-size: 0.65rem; letter-spacing: 0.15rem; text-transform: uppercase; }
+        @media screen and (max-width: 480px) { .home-testimonial { padding: 1rem; } .home-testimonial .ht-quote { flex-direction: column; text-align: center; gap: 0.6rem; } }
+        @media (prefers-reduced-motion: reduce) { .home-testimonial .ht-quote { transition: none; } }
+    </style>
 </head>
     <body class="is-preload">
 
@@ -92,10 +106,24 @@
                         
                         <h3 style="margin-bottom: 0;"><strong>dr. Mauro Semenzato</strong></h3>
                         
+                        <div class="home-testimonial">
+                            <div class="ht-stack">
+                                <div class="ht-quote ht-active">
+                                    <img src="images/enrico.jpg" alt="" />
+                                    <p class="ht-text">«Mi ha insegnato a ricondurre la mente al corpo per ritrovare calma e centratura.»<span class="ht-author">Enrico Gallorini</span><span class="ht-role">CEO @ GRS Research &amp; Strategy, Dubai</span></p>
+                                </div>
+                                <div class="ht-quote">
+                                    <img src="images/rivkah.jpg" alt="" />
+                                    <p class="ht-text">«Grazie Mauro per avermi accompagnata sempre con il massimo rispetto, sensibilità e attenzione.»<span class="ht-author">Rivkah Hetherington</span><span class="ht-role">Psicologa, Arteterapeuta, Somatic Experiencing Practitioner</span></p>
+                                </div>
+                            </div>
+                            <a href="#about" class="scrolly-link ht-link" data-target="testimonianze-servizi">Leggi le testimonianze</a>
+                        </div>
+                        
                         <ul class="icons" style="margin-top: 1.5rem; margin-bottom: 0;">
                             <li><a href="https://www.instagram.com/filosomatico" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
                             <li><a href="https://www.linkedin.com/in/maurosemenzato" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-                            <li><a href="INSERISCI_QUI_LINK_YOUTUBE" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
+                            <li><a class="icon brands fa-youtube" title="Canale in arrivo" aria-disabled="true" style="cursor: default;"><span class="label">YouTube (canale in arrivo)</span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -134,7 +162,7 @@
 
         <p>
             <span class="image left">
-                <img src="images/Bios-primo-piano.jpg" alt="Primo piano dr. Mauro Semenzato - Filosofo Counselor Somatic Experiencing Practitioner" />
+                <img src="images/Bios-primo-piano.jpg" alt="Primo piano del dr. Mauro Semenzato" />
             </span>
             Ognuna di queste esperienze mi ha lasciato qualcosa di importante sul piano professionale ma, ancor più, sul piano personale.
         </p>
@@ -172,7 +200,7 @@
         <ul class="icons bios-socials">
             <li><a href="https://www.instagram.com/filosomatico" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
             <li><a href="https://www.linkedin.com/in/maurosemenzato" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-            <li><a href="INSERISCI_QUI_LINK_YOUTUBE" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
+            <li><a class="icon brands fa-youtube" title="Canale in arrivo" aria-disabled="true" style="cursor: default;"><span class="label">YouTube (canale in arrivo)</span></a></li>
         </ul>
 
         <hr class="bios-divider" />
@@ -199,23 +227,23 @@
                 </div>
             </div>
 
-            <div class="testimonial-card">
-                <div class="testimonial-header">
-                    <div class="avatar-container">
-                        <img src="images/foto-testimonial.jpg" alt="Ritratto della testimonial">
-                    </div>
-                    <div class="quote-icon">“</div>
-                </div>
-                <p class="testimonial-text">
-                    Under Construction <span class="highlight">Under construction</span>
-                </p>
-                <div class="testimonial-author">
-                    <span class="author-name">Under Construction</span>
-                    <span class="author-role">Under construction</span>
-                    
-                    <a href="LINK_AMAZON_O_EDITORE" target="_blank" class="author-link">Scopri il suo libro</a>
-                </div>
-            </div>
+           <div class="testimonial-card">
+  <div class="testimonial-header">
+    <div class="avatar-container">
+      <img src="images/rivkah.jpg" alt="Ritratto di Rivkah Hetherington">
+    </div>
+    <div class="quote-icon">“</div>
+  </div>
+  <p class="testimonial-text">
+    Ricordo un momento meraviglioso durante una seduta con Mauro Semenzato, quando con difficoltà gli ho detto: «In questo momento mi sento giudicata da te». Altre volte avevo detto una cosa simile a diverse mie terapeute ma la loro reazione mi era stata devastante. Avevano negato il giudizio e rimandato la responsabilità a me, facendomi sentire doppiamente sbagliata, doppiamente giudicata. Lui invece ha replicato con sincerità: «Ma che cosa terribile!». Quell'affermazione, che distoglieva dalla questione di chi ha torto e chi ha ragione, accoglieva semplicemente il mio sentire e <span class="highlight">la sua validazione ha disconfermato in modo importante un apprendimento implicito di colpevolezza per le mancanze altrui.</span> Che cosa accade quando l'altro riconosce la ferita e se ne assume la responsabilità? Grazie Mauro per avermi accompagnata sempre con il massimo rispetto, sensibilità e attenzione.
+  </p>
+  <div class="testimonial-author">
+    <span class="author-name">Rivkah Hetherington</span>
+    <span class="author-role">Psicologa, Arteterapeuta, Somatic Experiencing Practitioner</span>
+    <span class="author-book">Co-curatrice di "Arteterapia e trauma. Metodologie per il riconsolidamento della memoria" (Carocci, 2025)</span>
+    <a href="https://www.carocci.it/prodotto/arteterapia-e-trauma" target="_blank" class="author-link">Scopri il suo libro</a>
+  </div>
+</div>
 
         </div>
     </article>
@@ -234,7 +262,7 @@
 
     <p>Così è stato per il mio percorso di evoluzione personale e professionale, che si è nutrito di molteplici radici, ognuna delle quali svolge un ruolo nel mio modo di lavorare con le persone.</p>
 
-    <div id="EPC-deep" class="contenuto-nascosto">
+    <div id="EPC-deep">
         <p>Chiamo dunque "Embodied Philosophical Counseling" l'insieme di competenze che caratterizza la mia offerta di servizi.</p>
         
         <p>In questa pagina potrai approfondire ognuna delle metodologie specifiche in cui mi sono diplomato e delle cui caratteristiche potrai usufruire. 
@@ -256,9 +284,6 @@
         </ul>
     </div>
 
-    <ul class="actions" style="clear: both; margin-top: 1rem;">
-        <li><a href="javascript:void(0);" class="button" onclick="gestisciTesto('EPC-deep', this)">Espandi</a></li>
-    </ul>
 
         
     <h3>Somatic Experiencing&reg;</h3>
@@ -339,8 +364,8 @@
         <ul>
             <li>Il Counseling non è psicoterapia</li>
             <li>Il Counseling non è un intervento di diagnosi e cura</li>
-            <li>Un ciclo di counseling si struttura in un numero limitato di incontri (max 10 incontri); tra un ciclo di counseling e quello (eventuale) successivo va previsto un intervallo di tempo di almeno 100 giorni</li>
-            <li>Il counselor è un professionista riconosciuto ai sensi della Legge n. 4 del 14 gennaio 2013</li>
+            <li>Il percorso ha durata definita, con obiettivi concordati all'inizio e verificati periodicamente insieme</li>
+            <li>Le prestazioni di counseling sono svolte ai sensi della Legge 14 gennaio 2013, n. 4</li>
         </ul>
     </div>
 
@@ -378,7 +403,7 @@
         <ul class="icons">
             <li><a href="https://www.instagram.com/filosomatico" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
             <li><a href="https://www.linkedin.com/in/maurosemenzato" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-            <li><a href="INSERISCI_QUI_LINK_YOUTUBE" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
+            <li><a class="icon brands fa-youtube" title="Canale in arrivo" aria-disabled="true" style="cursor: default;"><span class="label">YouTube (canale in arrivo)</span></a></li>
         </ul>
 
         <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 3rem;" />
@@ -555,6 +580,8 @@
     
     <p><span class="evidenza">NOTA:</span> I miei servizi non sostituiscono l'intervento medico e psicoterapico.<br>La collaborazione stretta con psicologi psicoterapeuti e psichiatri, anche in ambito clinico, è mia prassi abituale e quotidiana, come membro dell'équipe multidisciplinare del <a href="https://www.centrosoranzo.it" target="_blank">Centro Soranzo</a> per la cura delle dipendenze.</p>                               
 
+    <p>Il primo contatto può essere un breve <a href="#contact">colloquio informativo gratuito</a> di 20-25 minuti, al telefono o in videochiamata.</p>
+
     <div class="services-grid">
     
         <div class="service-card">
@@ -597,7 +624,7 @@
 
     <hr style="border: 0; border-top: 1px solid rgba(255, 255, 255, 0.1); margin-top: 2.5rem; margin-bottom: 1rem;" />
 
-    <h3 class="major" style="text-align: center; margin-bottom: 2rem;">Dicono di me</h3>
+    <h3 class="major" id="testimonianze-servizi" style="text-align: center; margin-bottom: 2rem;">Dicono di me</h3>
 
 
    <div class="testimonials-grid">
@@ -620,23 +647,23 @@
         </div>
     </div>
 
-    <div class="testimonial-card">
-        <div class="testimonial-header">
-            <div class="avatar-container">
-                <img src="images/foto-testimonial.jpg" alt="Ritratto della testimonial">
-            </div>
-            <div class="quote-icon">“</div>
-        </div>
-        <p class="testimonial-text">
-            Under Construction <span class="highlight">Under construction</span>
-        </p>
-        <div class="testimonial-author">
-            <span class="author-name">Under Construction</span>
-            <span class="author-role">Under construction</span>
-            
-            <a href="LINK_AMAZON_O_EDITORE" target="_blank" class="author-link">Scopri il suo libro</a>
-        </div>
+   <div class="testimonial-card">
+  <div class="testimonial-header">
+    <div class="avatar-container">
+      <img src="images/rivkah.jpg" alt="Ritratto di Rivkah Hetherington">
     </div>
+    <div class="quote-icon">“</div>
+  </div>
+  <p class="testimonial-text">
+    Ricordo un momento meraviglioso durante una seduta con Mauro Semenzato, quando con difficoltà gli ho detto: «In questo momento mi sento giudicata da te». Altre volte avevo detto una cosa simile a diverse mie terapeute ma la loro reazione mi era stata devastante. Avevano negato il giudizio e rimandato la responsabilità a me, facendomi sentire doppiamente sbagliata, doppiamente giudicata. Lui invece ha replicato con sincerità: «Ma che cosa terribile!». Quell'affermazione, che distoglieva dalla questione di chi ha torto e chi ha ragione, accoglieva semplicemente il mio sentire e <span class="highlight">la sua validazione ha disconfermato in modo importante un apprendimento implicito di colpevolezza per le mancanze altrui.</span> Che cosa accade quando l'altro riconosce la ferita e se ne assume la responsabilità? Grazie Mauro per avermi accompagnata sempre con il massimo rispetto, sensibilità e attenzione.
+  </p>
+  <div class="testimonial-author">
+    <span class="author-name">Rivkah Hetherington</span>
+    <span class="author-role">Psicologa, Arteterapeuta, Somatic Experiencing Practitioner</span>
+    <span class="author-book">Co-curatrice di "Arteterapia e trauma. Metodologie per il riconsolidamento della memoria" (Carocci, 2025)</span>
+    <a href="https://www.carocci.it/prodotto/arteterapia-e-trauma" target="_blank" class="author-link">Scopri il suo libro</a>
+  </div>
+</div>
 
 </div>
 
@@ -668,7 +695,7 @@
         <div style="margin-bottom: 2rem;">
             <input type="checkbox" id="privacy" name="privacy" required />
             <label for="privacy" style="font-size: 0.85rem; text-transform: none;">
-                Acconsento al trattamento dei dati personali per la gestione della mia richiesta.
+                Acconsento al trattamento dei dati personali per la gestione della mia richiesta (<a href="#privacy">leggi l'informativa</a>).
             </label>
         </div>
 
@@ -684,257 +711,28 @@
     <ul class="icons" style="margin-top: 1.5rem !important; margin-bottom: 2rem !important; justify-content: flex-start; display: flex;">
         <li><a href="https://www.instagram.com/filosomatico" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
         <li><a href="https://www.linkedin.com/in/maurosemenzato" class="icon brands fa-linkedin-in" target="_blank"><span class="label">LinkedIn</span></a></li>
-        <li><a href="INSERISCI_QUI_LINK_YOUTUBE" class="icon brands fa-youtube" target="_blank"><span class="label">YouTube</span></a></li>
+        <li><a class="icon brands fa-youtube" title="Canale in arrivo" aria-disabled="true" style="cursor: default;"><span class="label">YouTube (canale in arrivo)</span></a></li>
     </ul>
 </article>
 
-						<!-- Elements -->
-							<article id="elements">
-								<h2 class="major">Elements</h2>
-
-								<section>
-									<h3 class="major">Text</h3>
-									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
-									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
-									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
-									<hr />
-									<h2>Heading Level 2</h2>
-									<h3>Heading Level 3</h3>
-									<h4>Heading Level 4</h4>
-									<h5>Heading Level 5</h5>
-									<h6>Heading Level 6</h6>
-									<hr />
-									<h4>Blockquote</h4>
-									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
-									<h4>Preformatted</h4>
-									<pre><code>i = 0;
-
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
-
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
-								</section>
-
-								<section>
-									<h3 class="major">Lists</h3>
-
-									<h4>Unordered</h4>
-									<ul>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Alternate</h4>
-									<ul class="alt">
-										<li>Dolor pulvinar etiam.</li>
-										<li>Sagittis adipiscing.</li>
-										<li>Felis enim feugiat.</li>
-									</ul>
-
-									<h4>Ordered</h4>
-									<ol>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis viverra.</li>
-										<li>Felis enim feugiat.</li>
-										<li>Dolor pulvinar etiam.</li>
-										<li>Etiam vel felis lorem.</li>
-										<li>Felis enim et feugiat.</li>
-									</ol>
-									<h4>Icons</h4>
-									<ul class="icons">
-										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-									</ul>
-
-									<h4>Actions</h4>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions stacked">
-										<li><a href="#" class="button primary">Default</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Table</h3>
-									<h4>Default</h4>
-									<div class="table-wrapper">
-										<table>
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-
-									<h4>Alternate</h4>
-									<div class="table-wrapper">
-										<table class="alt">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Description</th>
-													<th>Price</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Item One</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Two</td>
-													<td>Vis ac commodo adipiscing arcu aliquet.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Three</td>
-													<td> Morbi faucibus arcu accumsan lorem.</td>
-													<td>29.99</td>
-												</tr>
-												<tr>
-													<td>Item Four</td>
-													<td>Vitae integer tempus condimentum.</td>
-													<td>19.99</td>
-												</tr>
-												<tr>
-													<td>Item Five</td>
-													<td>Ante turpis integer aliquet porttitor.</td>
-													<td>29.99</td>
-												</tr>
-											</tbody>
-											<tfoot>
-												<tr>
-													<td colspan="2"></td>
-													<td>100.00</td>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</section>
-
-								<section>
-									<h3 class="major">Buttons</h3>
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
-										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</section>
-
-								<section>
-									<h3 class="major">Form</h3>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="demo-name">Name</label>
-												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
-											</div>
-											<div class="field half">
-												<label for="demo-email">Email</label>
-												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
-											</div>
-											<div class="field">
-												<label for="demo-category">Category</label>
-												<select name="demo-category" id="demo-category">
-													<option value="">-</option>
-													<option value="1">Manufacturing</option>
-													<option value="1">Shipping</option>
-													<option value="1">Administration</option>
-													<option value="1">Human Resources</option>
-												</select>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
-												<label for="demo-priority-low">Low</label>
-											</div>
-											<div class="field half">
-												<input type="radio" id="demo-priority-high" name="demo-priority">
-												<label for="demo-priority-high">High</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-copy" name="demo-copy">
-												<label for="demo-copy">Email me a copy</label>
-											</div>
-											<div class="field half">
-												<input type="checkbox" id="demo-human" name="demo-human" checked>
-												<label for="demo-human">Not a robot</label>
-											</div>
-											<div class="field">
-												<label for="demo-message">Message</label>
-												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-
-							</article>
+<!-- Privacy -->
+<article id="privacy">
+    <h2 class="major">Privacy</h2>
+    <h3>Informativa sul trattamento dei dati personali</h3>
+    <p>Ai sensi dell'art. 13 del Regolamento (UE) 2016/679 (GDPR), questa informativa descrive come vengono trattati i dati inviati tramite il modulo di contatto di questo sito.</p>
+    <p><span class="evidenza">Titolare del trattamento</span><br>Dr. Mauro Semenzato – P.IVA 03960860272<br>Email: <a href="mailto:mauro.semenzato@gmail.com">mauro.semenzato@gmail.com</a></p>
+    <p><span class="evidenza">Dati trattati</span><br>Nome, indirizzo email e contenuto del messaggio che scegli di inviare. Ti invito a non inserire nel messaggio informazioni sulla salute o altri dati personali non necessari alla tua richiesta.</p>
+    <p><span class="evidenza">Finalità e base giuridica</span><br>I dati sono trattati esclusivamente per rispondere alla tua richiesta di informazioni o di appuntamento. La base giuridica è l'esecuzione di misure precontrattuali adottate su tua richiesta (art. 6, par. 1, lett. b, GDPR).</p>
+    <p><span class="evidenza">Destinatari e trasferimento fuori dall'UE</span><br>Il modulo è gestito dal servizio Formspree (Formspree, Inc., Stati Uniti), che riceve i messaggi e li inoltra al titolare. I dati possono quindi essere trasferiti negli Stati Uniti, sulla base delle garanzie previste dagli artt. 44 e seguenti del GDPR adottate dal fornitore. I dati non sono diffusi né ceduti a terzi per altre finalità.</p>
+    <p><span class="evidenza">Conservazione</span><br>I dati sono conservati per il tempo necessario a gestire la richiesta e comunque non oltre 12 mesi. Se la richiesta porta all'avvio di un percorso, i dati sono trattati secondo l'informativa consegnata in quella sede.</p>
+    <p><span class="evidenza">I tuoi diritti</span><br>Puoi chiedere in ogni momento l'accesso ai tuoi dati, la loro rettifica o cancellazione, la limitazione del trattamento, l'opposizione e la portabilità (artt. 15-22 GDPR), scrivendo all'indirizzo email sopra indicato. Hai inoltre il diritto di proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" target="_blank">www.garanteprivacy.it</a>).</p>
+</article>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; 2026 Filosomatico | Mauro Semenzato. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; 2026 Filosomatico | Mauro Semenzato – P.IVA 03960860272 | <a href="#privacy">Privacy</a>. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
@@ -1021,6 +819,19 @@ function gestisciTesto(id, elemento) {
         // 4. Mostra la nuova slide aggiungendo la classe 'active'
         slides[currentSlide].classList.add('active');
     }
+</script>
+<script>
+    // Rotazione delle testimonianze in home
+    (function() {
+        var frasi = document.querySelectorAll('.home-testimonial .ht-quote');
+        if (frasi.length < 2) return;
+        var i = 0;
+        setInterval(function() {
+            frasi[i].classList.remove('ht-active');
+            i = (i + 1) % frasi.length;
+            frasi[i].classList.add('ht-active');
+        }, 7500);
+    })();
 </script>
 	</body>
 </html>
