@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="it">
 <head>
-    <title>Mauro Semenzato &middot; Filosomatico | Somatic Experiencing&reg; | Embodied Philosophical Counseling</title>
+    <title>Somatic Experiencing&reg; a Spinea e Mestre (Venezia) | Mauro Semenzato</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     
@@ -10,13 +10,13 @@
     
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://filosomatico.com/" />
-    <meta property="og:title" content="Mauro Semenzato &middot; Filosomatico | Somatic Experiencing&reg; | Embodied Philosophical Counseling" />
+    <meta property="og:title" content="Somatic Experiencing&reg; a Spinea e Mestre (Venezia) | Mauro Semenzato" />
     <meta property="og:description" content="Integrazione di corpo e parola per gestire stress e burnout e riflettere sui comportamenti di dipendenza, a Mestre e online con il Dr. Mauro Semenzato." />
     <meta property="og:image" content="https://filosomatico.com/images/anteprima-social.jpg" />
 
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://filosomatico.com/" />
-    <meta property="twitter:title" content="Mauro Semenzato &middot; Filosomatico | Somatic Experiencing&reg; | Embodied Philosophical Counseling" />
+    <meta property="twitter:title" content="Somatic Experiencing&reg; a Spinea e Mestre (Venezia) | Mauro Semenzato" />
     <meta property="twitter:description" content="Integrazione di corpo e parola per gestire stress e burnout e riflettere sui comportamenti di dipendenza, a Mestre e online con il Dr. Mauro Semenzato." />
     <meta property="twitter:image" content="https://filosomatico.com/images/anteprima-social.jpg" />
 
@@ -100,6 +100,23 @@
                         background-color: #141617; transform: none !important; }
         }
 
+        /* Sottotitolo su due righe: stessa distanza dal nome sopra e dal motto sotto */
+        #header .content .inner h2 { margin-top: 1.33rem !important; }
+        @media screen and (min-width: 481px) and (max-width: 980px) {
+            #header .content .inner h2 { margin-top: 1.8rem !important; }
+        }
+
+        /* Link dai Servizi: lascia un po' d'aria sopra il titolo Somatic Experiencing in Methodos */
+        #metodo-se { scroll-margin-top: 2rem; }
+
+        /* Home: rimando discreto alla descrizione di Somatic Experiencing in Methodos */
+        .home-se-link { margin-top: 0.9rem; }
+        .home-se-link a { display: inline-block; font-size: 0.65rem; letter-spacing: 0.15rem; text-transform: uppercase; }
+
+        /* Methodos: rimando alla scheda Sessioni individuali in fondo a ogni sezione */
+        .methodos-cta { margin: -0.75rem 0 2.5rem 0; }
+        .methodos-cta a { font-size: 0.75rem; letter-spacing: 0.12rem; text-transform: uppercase; }
+
         /* Pulsante del colloquio gratuito */
         .home-cta { margin: 1.2rem 0 0 0 !important; justify-content: center; }
         .home-cta .button { margin-top: 0 !important; }
@@ -160,7 +177,7 @@
                 <div class="content">
                     <div class="inner">
                         <h1>Filosomatico</h1>
-                        <h2><strong>Embodied Philosophical Counseling</strong></h2>
+                        <h2><strong>Somatic Experiencing&reg;<br>Embodied Philosophical Counseling</strong></h2>
                         
                         <div style="margin-bottom: 1.5rem; text-transform: none !important; letter-spacing: 0.05rem; line-height: 1.5; font-size: clamp(0.8rem, 2.5vw, 1.1rem);">
                             <span style="display: block; white-space: nowrap;"><strong><em>Sapienza del corpo e saggezza del pensiero</em></strong></span>
@@ -172,6 +189,7 @@
                         <ul class="actions home-cta">
                             <li><a href="#contact" class="button">Colloquio gratuito di 20-25 min</a></li>
                         </ul>
+                        <div class="home-se-link"><a href="#methodos" class="scrolly-link" data-target="metodo-se" data-block="start">Cos&rsquo;&egrave; Somatic Experiencing&reg;? &rarr;</a></div>
                         
                         <div class="home-testimonial">
                             <div class="ht-stack">
@@ -342,10 +360,11 @@
             <li>Sarò la tua guida nei luoghi non visti e non pensati del tuo mondo e, come tale, sarò disposto ad imparare ad ogni istante da te. Al tempo stesso, ti solleciterò con il mio sguardo sulle cose, il mio pensiero e il mio sentire.</li>
         </ul>
     </div>
+    <p class="methodos-cta"><a href="#about" class="scrolly-link" data-target="card-sessioni">Sessioni individuali &rarr;</a></p>
 
 
         
-    <h3>Somatic Experiencing&reg;</h3>
+    <h3 id="metodo-se">Somatic Experiencing&reg;</h3>
     <p>"Il trauma non è nell'evento, ma in ciò che tratteniamo dentro in assenza di un testimone empatico" (Peter Levine)</p>
 
     <p>Sviluppato a partire dagli anni settanta del secolo scorso da Peter Levine, ricercatore multidisciplinare che si è occupato di fisiologia dello stress, biologia, etologia, neuroscienze e psicologia, Somatic Experiencing&reg; è un approccio naturalistico e psicofisiologico alla rinegoziazione delle esperienze traumatiche, basato su un'articolata comprensione neurofisiologica ed etologica della risposta allo stress.</p>
@@ -377,6 +396,7 @@
     <ul class="actions" style="clear: both; margin-top: 1rem;">
         <li><a href="javascript:void(0);" class="button" onclick="gestisciTesto('SE-deep', this)">Espandi</a></li>
     </ul>
+    <p class="methodos-cta"><a href="#about" class="scrolly-link" data-target="card-sessioni">Sessioni individuali &rarr;</a></p>
 
     
     <h3>Approccio Trager&reg;</h3>
@@ -405,6 +425,7 @@
     <ul class="actions" style="clear: both; margin-top: 1rem;">
         <li><a href="javascript:void(0);" class="button" onclick="gestisciTesto('Trager-deep', this)">Espandi</a></li>
     </ul>
+    <p class="methodos-cta"><a href="#about" class="scrolly-link" data-target="card-sessioni">Sessioni individuali &rarr;</a></p>
 
    
     <h3>Counseling Umanistico Integrato</h3>
@@ -431,6 +452,7 @@
     <ul class="actions" style="clear: both; margin-top: 1rem;">
         <li><a href="javascript:void(0);" class="button" onclick="gestisciTesto('counseling-deep', this)">Espandi</a></li>
     </ul>
+    <p class="methodos-cta"><a href="#about" class="scrolly-link" data-target="card-sessioni">Sessioni individuali &rarr;</a></p>
 
     
     <h3>Training Autogeno</h3>
@@ -451,6 +473,7 @@
     <ul class="actions" style="clear: both; margin-top: 1rem;">
         <li><a href="javascript:void(0);" class="button" onclick="gestisciTesto('TA-deep', this)">Espandi</a></li>
     </ul>
+    <p class="methodos-cta"><a href="#about" class="scrolly-link" data-target="card-sessioni">Sessioni individuali &rarr;</a></p>
 </article>
 
                       <article id="logos">
@@ -659,9 +682,9 @@
             <div class="icon-header">
                 <i class="fas fa-hands-helping"></i>
             </div>
-            <h3>Sessioni Individuali</h3>
+            <h3 id="card-sessioni">Sessioni Individuali</h3>
             <span class="subtitle">Online e In presenza (60 min)</span>
-            <p>Procedere insieme, al passo giusto per te.<br>Le tappe del tuo percorso di trasformazione e consapevolezza, con <a href="#methodos">i metodi</a> dell'Embodied Philosophical Counseling.</p>
+            <p>Procedere insieme, al passo giusto per te.<br>Sessioni di <a href="#methodos" class="scrolly-link" data-target="metodo-se" data-block="start">Somatic Experiencing&reg;</a> o di <a href="#methodos">Embodied Philosophical Counseling</a>, secondo ciò di cui hai bisogno.</p>
             <ul class="actions">
                 <li><a href="#contact" class="button">PRENOTA</a></li>
             </ul>
@@ -850,7 +873,7 @@ function gestisciTesto(id, elemento) {
                     setTimeout(() => {
                         targetElement.scrollIntoView({ 
                             behavior: 'smooth', 
-                            block: 'center' 
+                            block: this.getAttribute('data-block') || 'center' 
                         });
                     }, 700);
                 }
